@@ -97,12 +97,12 @@ $(function () {
             <li class="limited-dom purchase" data-limited-quantity="'+limiteNum+'" data-price="'+targetPrice+'">\
                 <div class="col-box">\
                     <div class="left-box">\
-                        <div class="img-box"><img src="images/_page/product-image.jpg"></div>\
+                        <div class="img-box"><img src="images/page/product-image.jpg"></div>\
                     </div>\
                     <div class="right-box">\
                         <div class="details">\
                             <div class="top-tag-box">\
-                                <div class="tag"><img src="images/_page/tag-icon-addcart.png">加購</div>\
+                                <div class="tag"><img src="images/page/tag-icon-addcart.png">加購</div>\
                             </div>\
                             <div class="product-name">'+targetName+'</div>\
                         </div>\
@@ -152,7 +152,7 @@ $(function () {
             targetCart.append('\
                 <li class="limited-dom" data-limited-quantity="5" data-price="320">\
                     <div class="left-box">\
-                        <div class="img-box"><img src="images/_page/product-image.jpg"></div>\
+                        <div class="img-box"><img src="images/page/product-image.jpg"></div>\
                     </div>\
                     <div class="right-box">\
                         <div class="details">\
@@ -196,7 +196,7 @@ $(function () {
         targetCart.append('\
             <li class="limited-dom" data-limited-quantity="5" data-price="320">\
                 <div class="left-box">\
-                    <div class="img-box"><img src="images/_page/product-image.jpg"></div>\
+                    <div class="img-box"><img src="images/page/product-image.jpg"></div>\
                 </div>\
                 <div class="right-box">\
                     <div class="details">\
