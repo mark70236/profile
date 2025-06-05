@@ -1,0 +1,116 @@
+.banner-sec.contact-us-banner{
+    background-image: url("../images/_page/contact-us/contact-us-kv.jpg");
+    min-height: 500px;
+
+    .banner-container{
+        width: 70%;
+        margin: 0 auto;
+
+        .banner-title{
+            text-align: center;
+        }
+        
+        .banner-desc{
+            text-align: center;
+            .font-24();
+        }
+    }
+    
+}
+
+.contact-us-breadcrumb{
+    background-color: #f7f7f7;
+    padding-bottom: 15px;
+}
+
+.contact-us-section{
+    background-color: #f7f7f7;
+}
+
+.contact-container{
+    padding-bottom: 100px;
+}
+
+.contact-card{
+    padding: 50px 60px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-height: 356px;
+
+    @media screen and (max-width:992px){
+        min-height: 451px;
+        padding: 50px 40px;
+    }
+
+    @media screen and (max-width:767px){
+        min-height: auto;
+    }
+
+    .contact-card-title{
+        position: relative;
+        padding-left: 25px;
+        padding-bottom: 15px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            width: 6px;
+            height: 32px;
+            background-color: #df032e;
+        }
+    }
+    
+    .contact-info{
+        .font-18();
+    }
+
+    .contact-details{
+        display: block;
+        .font-18();
+        padding-bottom: 5px;
+
+        a{
+            color: #333;
+        }
+
+        &.contact-details-flex{
+            display: flex;
+
+            @media screen and (max-width:575px){
+                display: block;
+            }
+
+            >span{
+                &:first-child{
+                    white-space: nowrap;
+                }
+                display: block;
+            }
+        }
+    }
+    
+    .font-b{
+        font-weight: 500;
+    }
+
+    .text-underline{
+        text-decoration: underline;
+        a{
+            color: #333;
+        }
+    }
+
+    .mailto-text{
+        color: #333;
+        text-decoration: underline;
+
+        &:hover{
+            color: #BE0E31;;
+        }
+    }
+}
+

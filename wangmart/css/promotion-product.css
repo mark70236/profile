@@ -1,0 +1,126 @@
+@charset "utf-8";
+.ps1-kv {
+  position: relative;
+}
+.promotion-period {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 10px;
+  display: inline-flex;
+  align-items: flex-end;
+  background-color: #df032e;
+}
+@media screen and (max-width: 767px) {
+  .promotion-period {
+    position: relative;
+    padding: 10px;
+    margin-top: 5px;
+  }
+}
+.promotion-period span {
+  color: #fff;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .promotion-period span {
+    display: inline-block;
+  }
+}
+.promotion-period .promotion-start,
+.promotion-period .promotion-end {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  .promotion-period .promotion-start,
+  .promotion-period .promotion-end {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.promotion-period .promotion-start .promotion-year,
+.promotion-period .promotion-end .promotion-year {
+  font-size: 14px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-period .promotion-start .promotion-year,
+  .promotion-period .promotion-end .promotion-year {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promotion-period .promotion-start .promotion-year,
+  .promotion-period .promotion-end .promotion-year {
+    font-size: 18px;
+  }
+}
+.promotion-period .promotion-start .promotion-month-date,
+.promotion-period .promotion-end .promotion-month-date {
+  font-size: 28px;
+  margin-top: -5px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-period .promotion-start .promotion-month-date,
+  .promotion-period .promotion-end .promotion-month-date {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promotion-period .promotion-start .promotion-month-date,
+  .promotion-period .promotion-end .promotion-month-date {
+    font-size: 18px;
+  }
+  .promotion-period .promotion-start .promotion-month-date:before,
+  .promotion-period .promotion-end .promotion-month-date:before {
+    content: '.';
+    position: relative;
+    margin-left: -3px;
+  }
+}
+.promotion-period .promotion-till {
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-period .promotion-till {
+    font-size: 12px;
+  }
+}
+.promotion-sub2 {
+  margin-bottom: 30px;
+}
+.promotion-sub2 .sec-desc {
+  padding-left: 0px;
+  padding-right: 0;
+}
+.promotion-sub2 .sec-desc p {
+  color: #666;
+  font-size: 18px;
+  line-height: 28px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-sub2 .sec-desc p {
+    font-size: 16px;
+  }
+}
+.promotion-sub2 .sec-desc img,
+.promotion-sub2 .sec-desc video,
+.promotion-sub2 .sec-desc iframe,
+.promotion-sub2 .sec-desc p,
+.promotion-sub2 .sec-desc div,
+.promotion-sub2 .sec-desc h1,
+.promotion-sub2 .sec-desc h2,
+.promotion-sub2 .sec-desc h3,
+.promotion-sub2 .sec-desc h4,
+.promotion-sub2 .sec-desc h5,
+.promotion-sub2 .sec-desc h6 {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.promotion-sub2 .sec-desc iframe,
+.promotion-sub2 .sec-desc video {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1.77777778;
+}

@@ -1,0 +1,563 @@
+@image: "../images/";
+body {
+    background-color: #f8f8f8;
+}
+
+body > .main-container {
+    padding: 220px 0 80px;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+        & {
+            padding: 160px 30px 30px;
+        }
+    }
+    .left-box {
+        float: left;
+        width: 200px;
+        margin-right: 60px;
+        @media (max-width: 1200px) {
+            & {
+                width: 100px;
+                margin-right: 30px;
+            }
+        }
+        @media (max-width: 1024px) {
+            & {
+                width: 100%;
+                max-width: 342px;
+                margin: 0 auto 30px auto;
+                float: none;
+                overflow: hidden;
+            }
+        }
+        @media (max-width: 400px) {
+            & {
+                max-width: 300px;
+            }
+        }
+        .member-menu {
+            background-color: #fff;
+            @media (max-width: 1024px) {
+                & {
+                    background-color: transparent;
+                }
+            }
+            .title {
+                color: #fff;
+                font-size: 26px;
+                border-radius: 5px;
+                text-align: center;
+                padding: 15px 0;
+                background-color: #df032e;
+                @media (max-width: 1200px) {
+                    & {
+                        font-size: 18px;
+                        padding: 15px 0;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    & {
+                        display: none;
+                    }
+                }
+            }
+            >ul {
+                position: relative;
+                width: 100%;
+                @media (max-width: 1024px) {
+                    & {
+                        overflow: hidden;
+                    }
+                }
+                li {
+                    padding: 17px;
+                    padding-top: 0;
+                    @media (max-width: 1200px) {
+                        & {
+                            padding: 7px;
+                            margin: 10px;
+                        }
+                    }
+                    @media (max-width: 1024px) {
+                        & {
+                            width: auto;
+                            float: left;
+                            padding: 12px;
+                            border-radius: 7px;
+                            background-color: #fff;
+                            margin: 10px;
+                        box-shadow: 0 0 10px ~'rgb(101, 101, 101,0.1)';
+                        }
+                    }
+                    @media (max-width: 400px) {
+                        & {
+                            padding: 8px;
+                        }
+                    }
+                    @media (max-width: 350px) {
+                        & {
+                            margin: 5px;
+                        }
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: #666;
+                        padding: 0 16px 10px;
+                        border-bottom: solid 2px #ccc;
+                        @media (max-width: 1200px) {
+                            & {
+                                flex-direction: column;
+                                padding: 0 5px 10px;
+                            }
+                        }
+                        @media (max-width: 1024px) {
+                            & {
+                                display: flex;
+                                text-align: center;
+                                justify-content: center;
+                                width: 70px;
+                                height: 70px;
+                                margin: 0;
+                                border: none;
+                                padding: 0;
+                            }
+                        }
+                        @media (max-width: 400px) {
+                            & {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                        .icon {
+                            margin-right: 10px;
+                            @media (max-width: 1200px) {
+                                & {
+                                    margin: 0;
+                                    margin-bottom: 3px;
+                                }
+                            }
+                            @media (max-width: 1024px) {
+                                & {
+                                    margin: 0;
+                                    margin-bottom: 3px;
+                                }
+                            }
+                        }
+                        span {
+                            @media (max-width: 1200px) {
+                                & {
+                                    font-size: 14px;
+                                }
+                            }
+                            @media (max-width: 1024px) {
+                                & {
+                                    display: block;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                li:first-child {
+                    padding-top: 17px;
+                    @media (max-width: 1024px) {
+                        & {
+                            padding-top: 12px;
+                        }
+                    }
+                    @media (max-width: 400px) {
+                        & {
+                            padding: 8px;
+                        }
+                    }
+                }
+                li:last-child {
+                    a {
+                        border-bottom: none;
+                    }
+                }
+                li.active {
+                    a {
+                        color: #df032e;
+                    }
+                }
+            }
+        }
+    }
+    .right-box {
+        float: left;
+        width: ~'calc(100% - 260px)';
+        @media (max-width: 1200px) {
+            & {
+                width: ~'calc(100% - 130px)';
+            }
+        }
+        @media (max-width: 1024px) {
+            & {
+                width: 100%;
+                float: none;
+            }
+        }
+        .bread-box {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+            @media (max-width: 768px) {
+                & {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+            }
+            i {
+                margin: 0 0 0 5px;
+                font-style: initial;
+            }
+            span:last-child {
+                color: #df042e;
+            }
+        }
+        .main-title {
+            font-size: 35px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            @media (max-width: 768px) {
+                & {
+                    font-size: 26px;
+                }
+            }
+        }
+        .notice {
+            margin-bottom: 30px;
+        }
+        .form-content {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            @media (max-width: 1024px) {
+                & {
+                    width: 100%;
+                }
+            }
+            @media (max-width: 400px) {
+                & {
+                    padding: 15px;
+                }
+            }
+            ol,ul {
+                margin-bottom: 0;
+            }
+            .replenish-box {
+                @media (max-width: 1024px) {
+                    & {
+                        overflow: scroll;
+                        overflow-y: hidden;
+                    }
+                }
+                >ul {
+                    min-height: 200px;
+                    @media (max-width: 1024px) {
+                        & {
+                            width: 100%;
+                        }
+                    }
+                    >li {
+                        //display: none;
+                        width: 100%;
+                        padding: 5px 0;
+                        border-bottom: solid 1px #e5e5e5;
+                        .top-box {
+                            display: flex;
+                            align-items: center;
+                            overflow: hidden;
+                            padding: 8px 24px;
+                            @media (max-width: 1024px) {
+                                & {
+                                    display: block;
+                                    padding: 8px 10px;
+                                }
+                            }
+                            >span {
+                                float: left;
+                                display: block;
+                                width: 15%;
+                                padding: 0 3px;
+                                font-size: 15px;
+                                color: #333;
+                                vertical-align: top;
+                                @media (max-width: 1024px) {
+                                    & {
+                                        width: ~'calc(100% - 120px)';
+                                        font-weight: bold;
+                                    }
+                                }
+                                i.edit {
+                                    cursor: pointer;
+                                    display: block;
+                                    width: 25px;
+                                    height: 25px;
+                                    margin-left: 4px;
+                                    background-image: url('@{image}_page/member/edit.svg');
+                                    .trs;
+                                    &:hover {
+                                        background-image: url('@{image}_page/member/edit-active.svg');
+                                    }
+                                }
+                                i.buy-again {
+                                    cursor: pointer;
+                                    display: block;
+                                    width: 25px;
+                                    height: 25px;
+                                    margin-left: 2px;
+                                    background-image: url('@{image}_page/member/buy-again.svg');
+                                    .trs;
+                                    &:hover {
+                                        background-image: url('@{image}_page/member/buy-again-active.svg');
+                                    }
+                                }
+                                i.detail {
+                                    cursor: pointer;
+                                    display: block;
+                                    width: 25px;
+                                    height: 25px;
+                                    margin-left: 2px;
+                                    background-image: url('@{image}_page/member/detail.svg');
+                                    .trs;
+                                    &:hover {
+                                        background-image: url('@{image}_page/member/detail-hover.svg');
+                                    }
+                                }
+                                i.delete {
+                                    cursor: pointer;
+                                    display: block;
+                                    width: 25px;
+                                    height: 25px;
+                                    margin-left: 2px;
+                                    background-image: url('@{image}_page/member/delete.svg');
+                                    .trs;
+                                    &:hover {
+                                        background-image: url('@{image}_page/member/delete-active.svg');
+                                    }
+                                }
+                                .tag {
+                                    cursor: pointer;
+                                    font-size: 15px;
+                                    padding: 2px 5px;
+                                    border-radius: 5px;
+                                    color: #aa8534;
+                                    border: solid 1px #aa8534;
+                                    &:hover {
+                                        opacity: 0.8;
+                                    }
+                                }
+                            }
+                            >span.for-mobile {
+                                display: none;
+                                @media (max-width: 1024px) {
+                                    & {
+                                        display: block;
+                                    }
+                                }
+                                >span.for-mobile {
+                                    @media (max-width: 1024px) {
+                                        & {
+                                            display: inline-block;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            >span.type1 {
+                                width: 35%;
+                                @media (max-width: 1024px) {
+                                    & {
+                                        width: 110px;
+                                        margin-right: 10px;
+                                    }
+                                    .text {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            >span.type2 {
+                                width: 5%;
+                            }
+                            >span:nth-child(2) {
+                                display: flex;
+                                align-items: center;
+                                .product-img {
+                                    width: 110px;
+                                    height: 110px;
+                                    margin-right: 10px;
+                                    border-radius: 5px;
+                                    overflow: hidden;
+                                    @media (max-width: 1024px) {
+                                        & {
+                                            margin-right: 0px;
+                                        }
+                                    }
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                            >span:first-child {
+                                @media (max-width: 1024px) {
+                                    & {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            >span.date1 {
+                                font-size: 13px;
+                                color: #a2a2a2;
+                                margin-bottom: 5px;
+                            }
+                            >span.record {
+                                @media (max-width: 1024px) {
+                                    & {
+                                        display: block;
+                                        width: ~'calc(100% - 25px)';
+                                        margin-top: 10px;
+                                    }
+                                }
+                                span {
+                                    @media (max-width: 1024px) {
+                                        & {
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin-right: 10px;
+                                            color: #a2a2a2;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            >span.btn-common-remove {
+                                @media (max-width: 1024px) {
+                                    & {
+                                        width: 25px;
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                            label {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                        .bottom-box {
+                            display: none;
+                            margin-top: 20px;
+                            padding: 20px 28px;
+                            border-radius: 5px;
+                            border: solid 1px #e5e5e5;
+                            .coupon-detail-box {
+                                overflow: hidden;
+                                display: flex;
+                                align-items: center;
+                                .left-box {
+                                    width: 45%;
+                                    margin-right: 5%;
+                                    .title {
+                                        font-size: 16px;
+                                        color: #333;
+                                        font-weight: bold;
+                                        margin-bottom: 2px;
+                                    }
+                                    .sub-title {
+                                        font-size: 15px;
+                                        color: #333;
+                                        margin-bottom: 10px;
+                                    }
+                                    .description {
+                                        font-size: 15px;
+                                        color: #666;
+                                    }
+                                }
+                                .right-box {
+                                    width: 50%;
+                                    .banner {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tri-box {
+                            display: none;
+                            cursor: pointer;
+                            margin-top: 20px;
+                            text-align: center;
+                            .triangle {
+                                display: block;
+                                width: 24px;
+                                height: 13px;
+                                margin: 0 auto;
+                                background-repeat: no-repeat;
+                                background-image: url('@{image}_page/member/tri-up-red.svg');
+                            }
+                        }
+                    }
+                    li.active {
+                        .top-box {
+                            >span {
+                                i.detail {
+                                    background-image: url('@{image}_page/member/detail-active.svg');
+                                }
+                            }
+                        }
+                    }
+                    li:last-child {
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+                    li.table-head {
+                        display: block;
+                        width: 100%;
+                        font-size: 15px;
+                        color: #8d8d8d;
+                        border-radius: 5px;
+                        padding: 17px 24px;
+                        background-color: #f8f8f8;
+                        @media (max-width: 1024px) {
+                            & {
+                                display: none;
+                            }
+                        }
+                        .top-box {
+                            padding: 0;
+                            span {
+                                font-size: 15px;
+                                color: #8d8d8d;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+
+
+            
+        }
+        .notice-box {
+            padding: 30px 40px;
+            border: solid 1px #e1e1e1;
+            background-color: #fafafa;
+            margin-top: 30px;
+            border-radius: 5px;
+            span {
+                font-size: 15px;
+                color: #797979;
+            }
+        }
+    }
+}

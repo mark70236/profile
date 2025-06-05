@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width , minimum-scale=1">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width , minimum-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <title>王品瘋美食購物網,線上生鮮購物網 | 王品集團</title>
+    <meta name="description" content="王品瘋美食購物網提供新鮮嚴選的生鮮品、肉品、海鮮、日常飲食與精選季節禮盒，待在家裡也能品嘗美味跟享瘦健康，立即加入會員享優惠！">
+    <meta name="keywords" content="王品,王品集團,王品瘋美食,購物,生鮮,牛肉,宅配美食,居家訂購,冷凍,冷藏,常溫">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezz-file.com/files/wangpin/frontend/demo/index.html">
+    <meta property="og:title" content="王品瘋美食購物網,線上生鮮購物網 | 王品集團">
+    <meta property="og:description" content="王品瘋美食購物網提供新鮮嚴選的生鮮品、肉品、海鮮、日常飲食與精選季節禮盒，待在家裡也能品嘗美味跟享瘦健康，立即加入會員享優惠！">
+    <meta property="og:image" content="https://ezz-file.com/files/wangpin/frontend/demo/images/og-img.jpg">
+
+    <link rel="stylesheet" href="plugin/reset/min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="plugin/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugin/bootstrap-4.1.3-dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="plugin/aos/aos.css">
+    <link rel="stylesheet" href="plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/widget.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/member-account.css">
+    <script src="plugin/jquery/3.6.0.min.js"></script>
+    <script src="plugin/jqueryui/1.12.1.min.js"></script>
+    <script src="plugin/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="plugin/bootstrap-4.1.3-dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="plugin/bootstrap-4.1.3-dist/js/bootstrap-datepicker.zh-TW.min.js"></script>
+
+    <script src="plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="plugin/aos/aos.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/member.js"></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRQQJZ22PL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VRQQJZ22PL');
+    </script>
+</head>
+
+<body class="member-register">
+    <header>
+        <div class="top-box">
+            <div class="inner-wrap">
+                <div class="btn-box">
+                    <span class="contact-us"><a href="#">聯絡我們</a></span>
+                    <!-- <span class="login"><a href="#">登入</a></span> -->
+                    <span class="member-box"><a href="./member.html"><i class="fa fa-user-o"
+                                aria-hidden="true"></i>陳小姐</a></span>
+                    <span class="logout"><a href="#">登出</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-box">
+            <div class="inner-wrap">
+                <div class="logo"><a href="./index.html"><img src="images/wowfoods_logo.svg"></a></div>
+                <div class="logo-active"><a href="./index.html"><img src="images/wowfoods_logo.svg"></a></div>
+                <div class="menu-btn-mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="btn-box">
+                    <span class="cart"><a href="shopping-detail.html">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span class="notice-num">3</span>
+					</a></span>
+                    <span class="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="flex-box">
+                                    <form autocomplete="off">
+                                        <div class="row">
+                                            <div class="form-group col-md-3 col-xs-12">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option value="0">分類</option>
+                                                    <option value="1">分類1</option>
+                                                    <option value="2">分類2</option>
+                                                    <option value="3">分類3</option>
+                                                    <option value="4">分類4</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-9 col-xs-12">
+                                                <div class="input-box">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                    <input type="text" class="form-control" id="keywords"
+                                                        placeholder="關鍵字搜尋">
+                                                    <div class="btn-search"> <a href="./search-result.html"></a>搜尋</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag-box">
+                                            <div class="row-title">近期熱搜詞<i class="fa fa-fire" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="tag-group">
+                                                <li class="tag"><a href="#">母親節特惠</a></li>
+                                                <li class="tag"><a href="#">端午節優惠</a></li>
+                                                <li class="tag"><a href="#">王品推薦</a></li>
+                                                <li class="tag"><a href="#">輕鬆料理</a></li>
+                                                <li class="tag"><a href="#">牛小排</a></li>
+                                                <li class="tag"><a href="#">餐廳推薦</a></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <ul class="header-menu">
+                    <li class="header-anchor-btn-1" data-anchor="1">
+                        <span> <a href="./promotion.html">優惠活動</a> </span>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="title-box">活動專區 ></div>
+                                <ul class="inner-list">
+                                    <li class="list-row">
+                                        <a href="./promotion-2021cny.html">買一送一</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">熱賣年菜</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">母親節活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-anchor-btn-2" data-anchor="2">
+                        <span>產品介紹</span>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="title-box">產品介紹 ></div>
+                                <ul class="inner-list">
+                                    <li class="list-row">
+                                        <a href="./product-meat.html">嚴選肉品</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">生猛海鮮</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">新鮮蔬果</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">輕鬆調理</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">日常乾貨</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">茶飲零食</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">精選廚具</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意項目</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意項目</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意項目</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-anchor-btn-3" data-anchor="3">
+                        <span> <a href="./gourmet-diary.html">美食日誌</a> </span>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="title-box">產品介紹 ></div>
+                                <ul class="inner-list">
+                                    <li class="list-row">
+                                        <a href="#">家桌料理</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">美味好食</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">餐廳推薦</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-anchor-btn-4" data-anchor="4"><span><a href="./contact.html">關於我們</a></span></li>
+                    <li class="header-anchor-btn-5" data-anchor="5"><span><a
+                                href="https://wowfoods.wowprime.com/branch.php">集團品牌</a></span></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mask"></div>
+	<div class="header-menu-for-mobile">
+        <div class="close-btn"></div>
+        <ul class="header-menu">
+            <li class="li-1st">
+                <span><a href="./promotion.html">優惠活動</a></span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <ul>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st"> <a href="./promotion-2021cny.html">買一送一</a> </span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">熱賣年菜</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">母親節活動</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li-1st">
+                <span><a href="./product-meat.html">產品介紹</a></span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <ul>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st"> <a href="./product-meat-beef.html">嚴選肉品</a></span>
+                            <!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+                        </div>
+                        <!-- <ul>
+                        <li>項目一</li>
+                        <li>項目二</li>
+                        <li>項目三</li>
+                        <li>項目四</li>
+                    </ul> -->
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">生猛海鮮</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">海鮮蔬果</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">輕鬆調理</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">日常乾貨</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">茶飲零食</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">精選廚具</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li-1st">
+                <span><a href="./gourmet-diary.html">美食日誌</a></span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <ul>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">家桌料理</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">美味好食</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">餐廳推薦</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="li-1st">
+                <a href="./contact.html"><span class="title-1st">關於我們</span></a>
+            </li>
+            <li class="li-1st">
+                <a href="https://wowfoods.wowprime.com/branch.php"><span class="title-1st">集團品牌</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="cart-box">
+        <div class="cart-title">我的購物車（3）</div>
+        <div class="close-btn"></div>
+        <div class="cart-tab-box">
+            <div class="tab-normal active" data-cart-tab="1">一般商品</div>
+            <div class="tab-pre-order" data-cart-tab="2">預購商品</div>
+        </div>
+        <div class="cart-product-list">
+            <ul class="list-normal" data-cart-tab="1">
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type1">常溫</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type2">冷凍</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type3">冷藏</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-pre-order" data-cart-tab="2">
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type1">常溫</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type2">冷凍</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type3">冷藏</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-checkout"><a href="./shopping-detail.html">訂單結帳</a></div>
+    </div>
+    <div class="main-container">
+        <section class="banner-sec register-banner">
+        </section>
+        <section class="member-account-section">
+            <div class="container">
+                <div class="mc-100 member-register-sec">
+                    <div class="member-container-center">
+                        <h2>會員註冊</h2>
+                        <p></p>
+                        <form class="wp-form label-form" action="">
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">姓名</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="name" aria-describedby=""
+                                        placeholder="請填寫真實中文姓名">
+                                    <!-- <div class="error-text">請填寫正確的內容</div> -->
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">E-mail</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="email" aria-describedby=""
+                                        placeholder="請填寫信箱">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">手機</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="phone" aria-describedby=""
+                                        placeholder="請輸入您的手機">
+                                </div>
+                            </div>
+                            <div class="form-group row form-date">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">生日</label>
+                                <div class="col-md-10">
+                                    <div class="input-group date date-normal">
+                                        <input type="text" class="form-control input-datepicker" id="birthday">
+                                        <span class="input-group-addon"></span>
+                                        <span class="date-icn"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row form-password">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">密碼</label>
+                                <div class="col-md-10">
+                                    <input type="password" class="form-control" id="password" aria-describedby=""
+                                        placeholder="請輸入您的密碼">
+                                    <span class="password-show"></span>
+                                    <span class="password-hide"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row form-password">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">確認密碼</label>
+                                <div class="col-md-10">
+                                    <input type="password" class="form-control" id="password-check" aria-describedby=""
+                                        placeholder="請再輸入一次密碼">
+                                    <span class="password-show"></span>
+                                    <span class="password-hide"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">安全性問題</label>
+                                <div class="col-md-10">
+                                    <div class="select-box">
+                                        <select class="form-control wk-select" id="securityQuestion">
+                                            <option value="0">忘記密碼安全問題</option>
+                                            <option value="1">您畢業的國小</option>
+                                            <option value="2">您最愛的寵物名字</option>
+                                            <option value="1">您最愛的食物</option>
+                                            <option value="2">您最好朋友的名字</option>
+                                            <option value="1">您最愛的電影</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label wp-form-label" for="">安全性答案</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="securityAnswer" aria-describedby=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="wp-tnc-check">
+                                <div class="col-md-10 offset-md-2 form-check">
+                                    <input type="checkbox" class="form-check-input" id="agreeCheck">
+                                    <label class="form-check-label" for="agreeCheck">我同意王品瘋美食<span class="btn"
+                                            data-toggle="modal" data-target="#privacyPolicy">隱私權政策</span>及<span
+                                            class="btn" data-toggle="modal"
+                                            data-target="#memberServiceTerms">會員服務條款</span></label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="pt-60 register-btn">
+                            <button type="submit" class="btn btn-red btn-block form-btn">立即註冊</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="to-top"><img src="images/top.svg"></div>
+    <footer>
+        <div class="top-box">
+            <div class="inner-wrap">
+                <div class="logo-box for-desktop"><img src="images/wowfoods_logo-footer.svg" alt="王品瘋美食購物網"></div>
+                <div class="right-box">
+                    <div class="guide-col">
+                        <div class="title">關於我們</div>
+                        <ul>
+                            <li><a href="./contact.html">聯絡我們</a></li>
+                            <li><a href="https://wowfoods.wowprime.com/branch.php">集團品牌</a></li>
+                            <li><a href="./privacy.html">隱私權政策</a></li>
+                        </ul>
+                    </div>
+                    <div class="guide-col">
+                        <div class="title">購物須知</div>
+                        <ul>
+                            <li><a href="./notice.html#shopping">運送及付款方式</a></li>
+                            <li><a href="./notice.html#points">瘋點數使用說明</a></li>
+                        </ul>
+                    </div>
+                    <div class="guide-col">
+                        <div class="logo-box for-mobile"><img src="images/wowfoods_logo-footer.svg" alt="王品瘋美食購物網">
+                        </div>
+                        <ul>
+                            <li>電子郵件：<a href="mailto:wowfresh@wowprime.com">wowfresh@wowprime.com</a></li>
+                            <li>聯絡電話：<a href="tel:0809-098-599">0809-098-599</a> </li>
+                            <li>聯絡時間：週一 至 週五 10:00 - 17:00</li>
+                        </ul>
+                        <div class="community-btn">
+                            <span class="btn-fb"><a href="https://www.facebook.com/WangprimeMart" target="_blank"><img
+                                        src="images/btn-facebook.svg" alt=""></a></span>
+                            <span class="btn-line"><a
+                                    href="https://page.line.me/?accountId=vyf9056i&openerPlatform=native&openerKey=unifiedSearch#mst_challenge=SOgOfvEdBMXwUrrLJQXyKCOtAcQ5gHHuS7L3JQ75pOQ"
+                                    target="_blank"> <img src="images/btn-line.svg" alt=""></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="inner-wrap">COPYRIGHT © 2021 王品瘋美食購物網 - ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+
+    <!-- Modal 彈窗 -->
+    <!-- 隱私權政策條款 -->
+    <div class="modal fade" id="privacyPolicy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog wp-modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content wp-modal-content">
+                <div class="wp-modal-close" data-dismiss="modal" aria-label="Close"></div>
+                <div class="wp-modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">隱私權政策</h2>
+                </div>
+                <div class="modal-body wp-modal-body">
+                    <div class="wp-modal-text">
+                        <div class="terms-content">
+                            歡迎您來到王品餐飲股份有限公司(官方網站（<a target="_blank"
+                                href="http://www.wowprime.com/map_2.html">http://www.wowprime.com/map_2.html</a>上列出之分公司）及其子公司和關聯公司
+                            (以下統稱王品集團)的服務網站，王品集團非常重視會員的隱私權，我們依據「個人資料保護法」及相關法令，制定個人資料與隱私權保護政策，向您提供各式服務及資訊。 
+                            請您詳細閱讀以下之規定以更進一步了解我們的隱私權政策。當您提交您的資料給我們時，即視為您已同意本隱私權政策之規定。
+                            <br><br>
+                            我們向您承諾：
+                            <br><br>
+                            為確保您個人資料得以在網際網路或是其他電子商務行為保持隱密性，王品集團願提供此隱私權聲明給所有線上之瀏覽者。我們不會任意出售您的姓名、或其他您所輸入的資料。此隱私權聲明主要在告知我們如何蒐集或使用您個人資料等事宜。
+                            我們蒐集哪些資料以及如何蒐集您的個人資料？
+
+                            <br>
+                            <br>
+
+                            一、對每一位瀏覽王品集團網頁的讀者，我們的伺服器將會自動辨識並儲存瀏覽者之IP位址﹝即瀏覽者電腦的網路連結位址﹞，以便判斷有哪些地區的讀者正在瀏覽我們的網頁，以及每一個瀏覽者在網頁上所花費之時間。這個資料能有助於我們了解讀者者瀏覽網站的行為，並能做為我們規畫網頁時的參考。除非您在瀏覽器上使用某種阻斷技術，否則每一次您啟動電腦，這訊息即可自動地由您的電腦傳輸出來。原則上，我們不會要求您先輸入個人可資辨識之資料後才能瀏覽或使用我們的網頁，只有在特定時候我們才可能會要求您提供個人資料作為辨識，例如：電子信箱地址、姓名、郵遞地址、電話號碼、密碼、登記、註冊、回覆、參與線上調查、訂閱郵件或時事通訊、或申請參與優惠活動或特價品的折扣等活動。
+                            <br><br>
+                            我們擁有客戶的個人資料，是由王品購物(包括本公司所屬王品瘋美食購物網、王品瘋美食App.等銷售通路及其相應行動應用程式)註冊會員或旗下所有餐廳（包含王品牛排、原燒
+                            優質原味燒肉、聚北海道昆布鍋、藝奇新日本料理、夏慕尼、新香榭鉄板燒、TASTy西堤牛排、陶板屋和風創作料理、品田牧場、Su/food 早午餐‧果汁吧‧地中海輕食、hot 7
+                            新鉄板料理、PUTIEN
+                            莆田、沐越Mu Viet越式料理、青花驕、XIANG DUCK 享鴨、丰禾、THE WANG PRIME STEAK 、和牛涮
+                            日式鍋物放題、町食、石二鍋、樂越、12MINI、薈麵點及萬鮮）中合法取得(包括但不限於自業務合作廠商處取得)。
+                            <br>
+                            請您詳細閱讀以下之規定以更進一步了解我們的隱私權政策。當您提交您的資料給我們時，即視為您已同意本隱私權政策之規定。
+                            <br><br>
+                            二、客戶資料蒐集種類<br>
+                            1. 我們會依據王品集團各通路提供之服務，請客戶提供必要之作業資料：<br>
+                            (1) 王品集團各通路之會員或客戶，我們會請您提供基本資料：包含您提供之姓名、性別、身分證統一編號、出生年月日、聯絡電話、聯絡地址、電子郵件信箱及其他您主動提供之資料。<br>
+                            (2) 當您指定商品配送服務時，我們會請您提供配送資料：包含收件人之姓名、聯絡電話、聯絡地址及其他必要配送聯絡資料。<br>
+                            (3) 當您有實際消費行為時，我們會留存您的帳務資料。<br>
+                            但若您選擇使用應用程式內含的Apple Pay、Google Pay或其他第三方的付款方式，相關資訊將會依據該第三方服務供應商的隱私權條款進行保護與管理。<br>
+                            (4) 我們基於提供市場分析、贈獎活動、會員及客戶權益通知等相關服務，將會為必要作業將請您提供其他資料。<br>
+                            (5) 當您使用網站之語音蒐尋服務，我們會進行錄音並保留錄音紀錄至少一個月，以進行服務優化分析。<br>
+                            <br>
+                            三、客戶資料蒐集目的<br>
+                            1.
+                            我們僅會在提供商品銷售、金融交易授權、物流配送、廣告行銷、市場分析、贈獎活動、會員權益通知、或其他附隨以上各樣服務及其他王品集團未來所有可能衍生之及相關服務時，為作業之必要運用您的個人資料：<br>
+                            (1)
+                            物流寄送：我們會於提供客戶商品銷售、物流配送等履行訂單之服務，提供配送資料予合作廠商(含王品集團商城或王品購物網站商家)及物流商。金融交易授權：您所提供之基本資料、帳務資料及其他必要資料，將於金融交易過程(包含信用卡授權及照會)中，提供予金融機構以完成金融交易及相關業務。<br>
+                            (2) 廣告行銷：為提供您更多優質商品及活動資訊，本公司、所屬子公司或透過委外廠商，在您同意之前提下，分享相關訊息，如您後續不願接收相關訊息，均可隨時通知我們。<br>
+                            (3) 市場分析：依據您瀏覽廣告之內容、消費之紀錄及所提供之資料，本公司會進行市場分析，包含透過第三方使用cookie或類似技術，以開發及提供日後更優質之客戶服務。<br>
+                            ※ cookie是網站伺服器用來和使用者瀏覽器進行溝通的一種技術，它可能在使用者的電腦中儲存某些資訊。使用者可以經由瀏覽器的設定，取消或限制此項功能。<br>
+                            (4) 其他業務附隨事項：依據以上所述服務目的、贈獎活動、會員相關權益通知，及您在使用王品集團其他服務，有同意之前提下，於必要範圍內進行相關運用。<br>
+                            <br>
+                            四、客戶資料利用期間、地區<br>
+                            除法令另有規定外，原則上我們僅會基於您授權的範圍，於您會員存續期間及台灣地區內，依照前述服務目的範圍為作業之必要運用客戶資料。
+                            <br><br>
+                            五、客戶資料儲存及保管 <br>
+                            關於您提供的個人資料，我們將就資訊系統及公司作業規則制定嚴格規範，任何人均須在我們明定的授權規範下才能處理及利用必要之資料。我們針對資料安全設備投注之保護措施如下：<br>
+                            1. 我們網頁採用最佳的科技來保障您的個人資料安全。目前以 Secure Sockets Layer(SSL) 機制(128bit)進行資料傳輸加密，並以加裝防火牆防止不法入侵
+                            ，避免您的個人資料遭到非法存取。<br>
+                            2. 此外，為了提供更適合您需要的服務，我們會接收並且記錄您瀏覽器上的伺服器數值，包括IP
+                            Address、Cookies，以進行提供與產品更新及網路服務優化有關的工作時使用。<br> 
+                            <br>
+                            六、客戶資料權利行使<br>
+                            1. 依個人資料保護法第三條規定，除非有其他法令限制，您就您所提供之個人資料享有查詢或請求閱覽、請求製給複製本、請求補充或更正、請求停止蒐集處理或利用、請求刪除的權利。<br>
+                            2.
+                            如果您欲行使上述權利或是有其他諮詢事項，可以至王品集團購物網之會員中心「我的帳戶」中完成相關操作，或逕由客服中心聯絡客服(電話: <a
+                                href="tel:+886800071198">_0800-071-198_</a> )提出意見，我們將盡快回覆您的問題。<br>
+                            <br>
+                            七、資料正確性之權益影響<br>
+                            在此提醒您，客戶如未提供完整的個人資料，可能無法成為我們的會員，或是享受各項相應的會員優惠服務或最新資訊；如客戶提供之資料錯誤，亦不受此聲明之保護。
+                            <br><br>
+                            八、關於此份隱私權聲明，我們得隨時因應社會環境及法令規定的變遷與科技的進步進行修改，並將修改內容以電子郵件、電話、型錄、通信網路、網路公告或其他適當方式通知客戶；當您下載安裝或使用或繼續使用王品集團購物所提供之任一服務時，即表示您已閱讀、瞭解並同意接受本服務條款之所有內容及其後修改變更。
+                            <br><br>
+                            九、如何"終止"我們對您個人資料之使用<br>
+                            您可以隨時"終止
+                            "我們對您個人資料之使用。如您有此打算者，請透過電郵 <a href="mailto:wowfresh@wowprime.com">
+                                wowfresh@wowprime.com</a>與客服專線_<a
+                                href="tel:+886809098599">0809-098-599</a>_聯繫我們，該王品集團的服務人員將盡速從我們的資料庫移除您之前已留存之個人資料。
+                            隱私聲明之作用及變動<br>
+                            <br>
+                            本隱私聲明所敘述之任何文字內容，旨在規範發生任何個人資料被蒐集或利用等情事。王品集團將保留得以隨時增刪修飾本隱私聲明之權利，任何增刪修飾後之聲明，應以我們的網頁公告時間為即時生效日。最近一次更正時間為：西元2020年9月23日。
+                            問題
+                            <br><br>
+                            如您對我們的隱私聲明或網頁有任何疑問或意見者，請透過 <a href="mailto:wowfresh@wowprime.com">wowfresh@wowprime.com</a>
+                            與客服專線 <a href="tel:+886809098599">0809-098-599</a> 聯繫我們。
+                            <br><br><br>
+
+                            ■電子發票作業個資保護告知條款<br>
+                            客戶於王品集團進行消費時，得自由選擇收取傳統實體發票或電子發票，如客戶係於王品集團商城或王品購物網站進行消費時，商家亦將委由王品餐飲股份有限公司代為開立發票。客戶如選擇開立電子發票請知悉下述聲明：<br>
+                            一、個資蒐集主體：王品餐飲股份有限公司<br>
+                            二、核准使用電子發票之字號及日期：<br>
+                            本公司奉核自民國104年10月起開始適用電子發票<br>
+                            核准文號：104年9月24日中區國稅民權銷售字第1041612275號函<br>
+                            三、本公司個資蒐集目的：<br>
+                            Ｏ六三 非公務機關依法定義務所進行個人資料之蒐集處理及利用<br>
+                            Ｏ六九 契約、類似契約或其他法律關係事務<br>
+                            Ｏ九Ｏ 消費者、客戶管理與服務<br>
+                            Ｏ九五 財稅行政、調查、統計與研究分析<br>
+                            一三六 資（通）訊與資料庫管理<br>
+                            一四八 網路及其他電子商務服務<br>
+                            一七九 其他財政服務及配合財政部電子發票整合服務<br>
+                            四、個資之類別：姓名、電子郵件信箱、聯絡地址、電子發票號碼、消費時間、消費明細、店點等發票資料。<br>
+                            五、個人資料利用之期間、地區：本公司營運地區及依法保存會計憑證期限內。<br>
+                            六、個人資料利用之對象、方式：<br>
+                            本公司基於配合財政部電子發票整合服務之特定目的內，將電子發票相關資料上傳至財政部電子發票整合服務平台（網址<a target="_blank"
+                                href="http://www.einvoice.nat.gov.tw/">http://www.einvoice.nat.gov.tw/</a>），供其於「Ｏ九五財稅行政」、「一五七調查、統計與研究分析」、「一三六資（通）訊與資料庫管理」、「一四八網路購物及其他電子商務服務」、「一七九其他財政服務」及提供電子發票加值服務目的內處理利用。<br>
+                            七、電子發票相關資訊：<br>
+                            會員就查詢、捐贈、兌獎及電子發票有關之資訊，請至公司官網「我的訂單」查詢。<br>
+                            八、當事人得自由提供資料時，不提供對其權益之影響：若會員資料有填寫未盡正確缺漏之處，可能影響服務提供或商品寄送，會員得隨時停止以載具索取電子發票而改索取紙本電子發票，停用不影響用戶既有權益，若有遺失或毀損情事時，請洽本公司服務窗口辦理。<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 會員服務條款 -->
+    <div class="modal fade" id="memberServiceTerms" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog wp-modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content wp-modal-content">
+                <div class="wp-modal-close" data-dismiss="modal" aria-label="Close"></div>
+                <div class="wp-modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">會員服務條款</h2>
+                </div>
+                <div class="modal-body wp-modal-body">
+                    <div class="wp-modal-text">
+                        <div class="terms-content">
+                            王品瘋美食App.及王品瘋美食產品官網(王品瘋美食購物網)為王品餐飲股份有限公司，經營管理之網路平台(以下簡稱本平台)。
+                            我們非常重視您的相關權益，希望您在使用本平台之會員服務(以下簡稱本服務)，仔細閱讀以下會員權益 
+
+                            <ol>
+                                <li>
+                                    一、認知與接受條款 
+                                    <span class="terms">
+                                        本平台係依據本服務條款提供王品瘋美食會員權益服務
+                                        (以下簡稱「本服務」)。當會員完成本平台之會員註冊手續、或開始使用本服務時，即表示已閱讀、瞭解並同意接受本服務條款之所有內容，並完全接受本服務現有與未來衍生的服務項目及內容。 
+                                        本平台有權於任何時間修改或變更本服務條款之內容，修改後的服務條款內容將公佈網站上，本平台將不會個別通知會員，建議會員隨時注意該等修改或變更。會員於任何修改或變更後繼續使用本服務時，視為會員已閱讀、瞭解並同意接受該等修改或變更。若不同意上述的服務條款修訂或更新方式，或不接受本服務條款的其他任一約定，會員應立即停止使用本服務。
+                                    </span>
+                                </li>
+                                <li>
+                                    二、會員的註冊義務
+                                    <span class="terms">
+                                        會員基本資料（包含帳號暱稱、金融帳號、手機號碼等一切必要欄位）為交易平台收付款時的基礎資料，如有變更請立即修正，若因會員未變更基礎資料，導致金流、資訊流作業無法完成，不得作為取消交易、拒絕付款之理由。對於會員所提供任何不正確不合法之連線方式招致的任何費用，本
+                                        平台將不會負擔任何責任。
+                                        使用無效銀行帳戶，或非使用者本人的銀行帳戶進行交易，使用者應負起法律責任。
+                                        若會員未滿20歲或在法律上受輔助宣告之人，應事先經會員的法定代理人
+                                        （或輔助人）閱讀、瞭解並同意本服務條款之所有內容及其後修改變更，方得使用或繼續使用本服務。當會員使用或繼續使用本服務時，即推定會員的法定代理人（或輔助人）已閱讀、瞭解並同意接受本服務條款之所有內容及其後修改變更。若原本為完全行為能力人，而於註冊後受輔助宣告者，亦同。
+                                        <br><br>
+                                        會員同意會員的本平台帳號係不可轉讓，且會員本平台帳號或帳號中內容之任何權利，於會員死亡時即立刻終止，本平台有權終止會員的帳號，且其所有內容將被永久刪除。
+                                    </span>
+                                </li>
+                                <li>
+                                    三、隱私權政策
+                                    <span class="terms">
+                                        關於會員的註冊以及其他特定資料依「隱私權政策」受到保護與規範。
+                                    </span>
+                                </li>
+                                <li>
+                                    四、使用者的守法義務及承諾
+                                    <span class="terms">
+                                        會員承諾絕不為任何非法目的或以任何非法方式使用本服務，並承諾遵守中華民國相關法規及一切使用網際網路之國際慣例。會員若係中華民國以外之使用者，並同意遵守所屬國家或地域之法令。<br>
+                                        會員同意並保證不得利用本服務從事侵害他人權益或違法之行為，包括但不限於： <br>
+                                        公布或傳送任何誹謗、侮辱、具威脅性、攻擊性、不雅、猥褻、不實、違反公共秩序或善良風俗或其他不法之文字、圖片或任何形式的檔案<br>
+                                        侵害或毀損本平台或他人名譽、隱私權、營業秘密、商標權、著作權、專利權、其他智慧財產權及其他權利<br>
+                                        違反依法律或契約所應負之保密義務<br>
+                                        冒用他人名義使用本服務 <br>
+                                        傳輸或散佈電腦病毒<br>
+                                        從事未經本平台事前授權的商業行為<br>
+                                        刊載、傳輸、發送垃圾郵件、連鎖信、違法或未經本平台許可之多層次傳銷訊息及廣告等；或儲存任何侵害他人智慧財產權或違反法令之資料<br>
+                                        對本服務其他用戶或第三人產生困擾、不悅或違反一般網路禮 <br>
+                                        會員若違反本條義務及承諾，經查證屬實者，本平台得終止會員資格並採取法律途徑、或保留法律追訴之權利。<br>
+                                    </span>
+                                </li>
+                                <li>
+                                    五、服務內容之變更與電子報eDM發送及手機推播
+                                    <span class="terms">
+                                        會員同意本平台所提供本服務之範圍，均得視業務需要及實際情形，增減、變更或終止相關服務的項目或內容，且無需個別通知會員。 <br>
+                                        會員同意本平台得依實際執行情形，增加、修改或終止相關活動，並選擇最適方式告知會員。 <br>
+                                        會員同意本平台得不定期發送電子報或行銷訊息(eDM)至會員所登錄的電子信箱帳號，或是不定期手機推播。當會員收到訊息後表示拒絕接受行銷時，本平台將停止繼續發送行銷訊息。
+                                    </span>
+                                </li>
+                                <li>
+                                    六、服務之停止、中斷
+                                    <span class="terms">
+                                        本平台將依一般合理之技術及方式，維持系統及服務之正常運作。但於以下各項情況時，本平台有權可以停止、中斷提供本服務：<br>
+                                        本平台網站電子通信設備進行必要之保養及施工時 <br>
+                                        發生突發性之電子通信設備故障時<br>
+                                        本平台網站申請之電子通信服務被停止，無法提供服務時<br>
+                                        由於天災等不可抗力之因素或其他不可歸責致使無法提供服務時
+                                    </span>
+                                </li>
+                                <li>
+                                    七、交易聲明
+                                    <span class="terms">
+                                        會員使用本服務進行交易時，應依據本平台所提供之確認商品數量及價格機制進行。
+                                        會員同意使用本服務訂購產品時，於本平台通知確認交易成立前，本平台仍保有不接受訂單或取消出貨之權利。會員向本平台發出訂購通知後，系統將自動發出接受通知，但此通知並非訂單確定通知，關於交易成立與否本平台將另行告知。若訂單內容之標的商品或服務，其交易條件(包括但不限於規格、內容說明、圖片)有誤時，本平台仍得於下單後七個工作日拒絕該筆訂單。
+                                        會員若於使用本服務訂購產品後，倘任意退換貨、取消訂單、或有任何本平台認為不適當而造成本平台作業上之困擾或損害之行為，本平台將可視情況採取拒絕交易。若會員訂購之產品屬於以下商品情形(1)預購類商品(2)商品頁顯示無庫存(3)須向供應商調貨(4)轉由廠商出貨，因商品交易特性之故，倘商品缺貨、或廠商因故無法順利供貨導致訂單無法成立時，本平台將以最適方式告知。
+                                        會員使用本平台進行交易時，得依照消費者保護法之規定行使權利，因會員之交易行為而對本服務條款產生疑義時，應為有利於消費者之解釋。 
+                                        <br><br>
+                                        因本平台有關金流部分是與銀行信用卡合作介接或匯款，因此皆需遵從銀行相關規定，當會員使用上述金流部分時，即表示會員已同意接受該銀行或介接金流之服務條款之所有內容。
+                                        <br><br>
+                                        交易退回：當會員使用本平台相關交易服務進行金流動作後，可能由於網路銀行本身系統問題、銀行相關作業網路連線品質、消費者身份確認錯誤或其他本平台不可抗拒因素造成交易無法完成。會員必須確認會員所輸入之基本資料無誤，以便本平台能通知會員作後續處理。若會員所提供或輸入之資訊有誤，以致使本平台無法及時通知會員，因而所造成的損失或後續處理上的困擾，本平台對此不負任何責任。
+                                        <br><br>
+                                        連線設備：假使會員的連線設備的損失或故障，造成會員最後與本平台連接時所進行的交易記錄可能失去，本平台將不因此負擔會員的損失。<br>
+                                        如果會員相信使用者帳號或密碼有被更動，或沒有會員的許可有人私自從會員帳戶進行交易，請會員立刻聯絡本平台。根據銀行相關法規，若會員發現未經許可的交易，或有某人已經得到會員的密碼，請儘快地通知本平台。
+                                    </span>
+                                </li>
+                                <li>
+                                    八、免責聲明
+                                    <span class="terms">
+                                        本平台將不會為下列原因所引發的損失或傷害而負賠償責任，包括但不限於，任何執行的失誤、錯誤、遺漏、中斷、缺失、傳輸的延誤、電腦病毒、或線路故障。本平台將不會為任何損失或傷害而負賠償責任，包括但不限於，因使用或不當使用本網站內容而導致的特殊或因此而產生的損失，即使本平台或本平台授權的代表疏忽或已告知可能造成此類損失。
+                                    </span>
+                                </li>
+                                <li>
+                                    九、智慧財產權的保護
+                                    <span class="terms">
+                                        本平台所使用之軟體或程式、網站上所有內容，包括但不限於著作、圖片、檔案、資訊、資料、網站架構、網站畫面的安排、網頁設計，均由本平台或其他權利人依法擁有其智慧財產權，包括但不限於商標權、專利權、著作權、營業秘密與專有技術等。任何人不得逕自使用、修改、重製、公開播送、改作、散布、發行、公開發表、進行還原工程、解編或反向組譯。
+                                    </span>
+                                </li>
+                                <li>
+                                    十、會員對本平台之授權 
+                                    <span class="terms">
+                                        對於會員上載、傳送、輸入或提供之資料，會員同意本平台網站得於合理之範圍內蒐集、處理、保存、傳遞及使用該等資料，以提供使用者其他資訊或服務、或作成會員統計資料、或進行關於網路行為之調查或研究，或為任何之合法使用。
+                                        若會員無合法權利得授權他人使用、修改、重製、公開播送、改作、散布、發行、公開發表某資料，並將前述權利轉授權第三人，請勿擅自將該資料上載、傳送、輸入或提供至本平台。任何資料一經會員上載、傳送、輸入或提供至本平台時，視為會員已允許本平台無條件使用、修改、重製、公開播送、改作、散布、發行、公開發表該等資料，並得將前述權利轉授權他人，會員對此絕無異議。會員並應保證本平台使用、修改、重製、公開播送、改作、散布、發行、公開發表、轉授權該等資料，不致侵害任何第三人之智慧財產權，否則應對本平台負損害賠償責任）。
+                                    </span>
+                                </li>
+                                <li>
+                                    十一、 準據法與管轄法院
+                                    <span class="terms">
+                                        因使用本平台服務而所生之法律爭議，雙方同意以中華民國法為準據法（但排除反致之適用），並以臺灣臺中地方法院為第一審管轄法院。
+                                        對於本服務條款之解釋與適用產生疑義雙方同意依中華民國之法律、行政解釋、習慣及法理原則予以處理 。
+                                    </span>
+                                </li>
+                                <li>
+                                    十二、其他條款
+                                    <span class="terms">
+                                        若會員使用本服務時，違反條款或服務使用上有問題時，請利用本平台【客服信箱】進行詢問，或打電話至客服專線: <a
+                                            href="tel:+886809098599"> 0809-098-599</a>。
+                                    </span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="phone-verification" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog wp-modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content wp-modal-content">
+                <div class="wp-modal-close" data-dismiss="modal" aria-label="Close"></div>
+                <div class="wp-modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">手機驗證碼</h2>
+                </div>
+                <div class="modal-body wp-modal-body">
+                    <div class="wp-modal-text">
+                        已寄送驗證碼至0912345678，請填入驗證碼驗證，若您未收到驗證碼請按下方「重新寄送驗證碼」，謝謝！
+                    </div>
+                    <div>
+                        <form class="wp-form" action="">
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="" aria-describedby="" placeholder="請輸入您的驗證碼">
+                                <div class="verify-error">驗證碼錯誤</div>
+                                <div class="countdown">剩餘時間 <span id="timer"></span> </div>
+                            </div>
+                            <div class="modal-btn verify-btn">
+                                <button type="button" class="btn btn-red btn-block">驗證</button>
+                            </div>
+                            <div class="modal-btn">
+                                <button type="button" class="btn btn-outline btn-block">重新寄送驗證碼</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</html>

@@ -1,0 +1,69 @@
+.banner-sec.terms-banner{
+    background-image: url("../images/_page/terms/terms-kv.jpg");
+    min-height: auto;
+    
+    .banner-container{
+        width: 100%;
+    }
+
+}
+
+.terms-breadcrumb{
+    background-color: #f7f7f7;
+    padding-bottom: 16px;
+}
+
+.terms-sec{
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+
+    .terms-title{
+        position: relative;
+        padding-left: 25px;
+        padding-bottom: 15px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            width: 6px;
+            height: 32px;
+            background-color: #df032e;
+        }
+    }
+
+    .terms-content{
+        color: #666;
+        line-height: 2;
+        letter-spacing: 0.5px;
+        .font-18();
+
+        a{
+            color: #666;
+
+            &:hover{
+                color: #333;
+            }
+        }
+        
+        ol{
+            margin-bottom: 0px;
+
+            li{
+                padding-top: 25px;
+                font-weight: bold;
+                color: #333;
+                .font-20();
+
+                span{
+                    .font-18();
+                    margin-top: 5px;
+                    display: block;
+                    color: #666;
+                    font-weight: normal;
+                }
+            }
+        }
+
+    }
+}

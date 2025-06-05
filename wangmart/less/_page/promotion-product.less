@@ -1,0 +1,88 @@
+
+.ps1-kv{
+    position: relative;
+}
+
+.promotion-period {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 10px;
+    display: inline-flex;
+    align-items: flex-end;
+    background-color: #df032e;
+
+    @media screen and (max-width:767px){
+        position: relative;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    span{   
+        color: #fff;
+        display: block;
+        @media screen and (max-width:767px){
+            display: inline-block;
+        }
+    }
+    
+    .promotion-start,.promotion-end{
+        padding-right: 15px;
+        padding-left: 15px;
+        @media screen and (max-width:767px){
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .promotion-year{
+            .font-14();
+
+            @media screen and (max-width:767px){
+                font-size: 18px;
+            }
+        }
+        .promotion-month-date{
+            font-size: 28px;
+            margin-top: -5px;
+            @media screen and (max-width:1199px) {
+                font-size: 22px;
+            }
+
+            @media screen and (max-width:767px){
+                font-size: 18px;
+                &:before{
+                    content: '.';
+                    position: relative;
+                    margin-left: -3px;
+
+                }
+            }
+        }
+    }
+
+    .promotion-till{
+        padding-bottom: 5px;
+        .font-14();
+    }
+  }
+
+  .promotion-sub2{
+      margin-bottom: 30px;
+	.sec-desc{
+		padding-left: 0px;
+        padding-right: 0;
+		p{
+			color: #666;
+            .font-18();
+            line-height: 28px;
+		}
+        img,video,iframe,p,div,h1,h2,h3,h4,h5,h6 {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        iframe,video {
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+	}
+}

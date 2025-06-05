@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width , minimum-scale=1">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width , minimum-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <title>王品瘋美食購物網,線上生鮮購物網 | 王品集團</title>
+    <meta name="description" content="王品瘋美食購物網提供新鮮嚴選的生鮮品、肉品、海鮮、日常飲食與精選季節禮盒，待在家裡也能品嘗美味跟享瘦健康，立即加入會員享優惠！">
+    <meta name="keywords" content="王品,王品集團,王品瘋美食,購物,生鮮,牛肉,宅配美食,居家訂購,冷凍,冷藏,常溫">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezz-file.com/files/wangpin/frontend/demo/index.html">
+    <meta property="og:title" content="王品瘋美食購物網,線上生鮮購物網 | 王品集團">
+    <meta property="og:description" content="王品瘋美食購物網提供新鮮嚴選的生鮮品、肉品、海鮮、日常飲食與精選季節禮盒，待在家裡也能品嘗美味跟享瘦健康，立即加入會員享優惠！">
+    <meta property="og:image" content="https://ezz-file.com/files/wangpin/frontend/demo/images/og-img.jpg">
+
+    <link rel="stylesheet" href="plugin/reset/min.css">
+    <link rel="stylesheet" href="plugin/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="plugin/aos/aos.css">
+    <link rel="stylesheet" href="plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/widget.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/branch.css">
+    <script src="plugin/jquery/3.6.0.min.js"></script>
+    <script src="plugin/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="plugin/jqueryui/1.12.1.min.js"></script>
+    <script src="plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="plugin/aos/aos.js"></script>
+    <script src="js/global.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRQQJZ22PL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VRQQJZ22PL');
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
+    <header>
+        <div class="top-box">
+            <div class="inner-wrap">
+                <div class="btn-box">
+                    <span class="contact-us"><a href="#">聯絡我們</a></span>
+                    <!-- <span class="login"><a href="#">登入</a></span> -->
+                    <span class="member-box"><a href="./member.html"><i class="fa fa-user-o"
+                                aria-hidden="true"></i>陳小姐</a></span>
+                    <span class="logout"><a href="#">登出</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-box">
+            <div class="inner-wrap">
+                <div class="logo"><a href="./index.html"><img src="images/wowfoods_logo.svg"></a></div>
+                <div class="logo-active"><a href="./index.html"><img src="images/wowfoods_logo.svg"></a></div>
+                <div class="menu-btn-mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="btn-box">
+                    <span class="cart"><a href="shopping-detail.html">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span class="notice-num">3</span>
+					</a></span>
+                    <span class="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="flex-box">
+                                    <form autocomplete="off">
+                                        <div class="row">
+                                            <div class="form-group col-md-3 col-xs-12">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option value="0">分類</option>
+                                                    <option value="1">分類1</option>
+                                                    <option value="2">分類2</option>
+                                                    <option value="3">分類3</option>
+                                                    <option value="4">分類4</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-9 col-xs-12">
+                                                <div class="input-box">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                    <input type="text" class="form-control" id="keywords"
+                                                        placeholder="關鍵字搜尋">
+                                                    <div class="btn-search"> <a href="./search-result.html"></a>搜尋</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag-box">
+                                            <div class="row-title">近期熱搜詞<i class="fa fa-fire" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="tag-group">
+                                                <li class="tag"><a href="#">母親節特惠</a></li>
+                                                <li class="tag"><a href="#">端午節優惠</a></li>
+                                                <li class="tag"><a href="#">王品推薦</a></li>
+                                                <li class="tag"><a href="#">輕鬆料理</a></li>
+                                                <li class="tag"><a href="#">牛小排</a></li>
+                                                <li class="tag"><a href="#">餐廳推薦</a></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <ul class="header-menu">
+                    <li class="header-anchor-btn-1" data-anchor="1">
+                        <span> <a href="./promotion.html">優惠活動</a> </span>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="title-box">活動專區 ></div>
+                                <ul class="inner-list">
+                                    <li class="list-row">
+                                        <a href="./promotion-2021cny.html">買一送一</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">熱賣年菜</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">母親節活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意活動示意活動</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-anchor-btn-2" data-anchor="2">
+                        <span>產品介紹</span>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="title-box">產品介紹 ></div>
+                                <ul class="inner-list">
+                                    <li class="list-row">
+                                        <a href="./product-meat.html">嚴選肉品</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">生猛海鮮</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">新鮮蔬果</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">輕鬆調理</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">日常乾貨</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">茶飲零食</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">精選廚具</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意項目</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意項目</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">示意項目</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-anchor-btn-3" data-anchor="3">
+                        <span> <a href="./gourmet-diary.html">美食日誌</a> </span>
+                        <div class="child-list">
+                            <div class="inner-wrap">
+                                <div class="title-box">產品介紹 ></div>
+                                <ul class="inner-list">
+                                    <li class="list-row">
+                                        <a href="#">家桌料理</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">美味好食</a>
+                                    </li>
+                                    <li class="list-row">
+                                        <a href="#">餐廳推薦</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-anchor-btn-4" data-anchor="4"><span><a href="./contact.html">關於我們</a></span></li>
+                    <li class="header-anchor-btn-5" data-anchor="5"><span><a
+                                href="https://wowfoods.wowprime.com/branch.php">集團品牌</a></span></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mask"></div>
+	<div class="header-menu-for-mobile">
+        <div class="close-btn"></div>
+        <ul class="header-menu">
+            <li class="li-1st">
+                <span><a href="./promotion.html">優惠活動</a></span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <ul>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st"> <a href="./promotion-2021cny.html">買一送一</a> </span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">熱賣年菜</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">母親節活動</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li-1st">
+                <span><a href="./product-meat.html">產品介紹</a></span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <ul>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st"> <a href="./product-meat-beef.html">嚴選肉品</a></span>
+                            <!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+                        </div>
+                        <!-- <ul>
+                        <li>項目一</li>
+                        <li>項目二</li>
+                        <li>項目三</li>
+                        <li>項目四</li>
+                    </ul> -->
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">生猛海鮮</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">海鮮蔬果</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">輕鬆調理</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">日常乾貨</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">茶飲零食</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">精選廚具</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li-1st">
+                <span><a href="./gourmet-diary.html">美食日誌</a></span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <ul>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">家桌料理</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">美味好食</span>
+                        </div>
+                    </li>
+                    <li class="li-2st">
+                        <div class="title-box">
+                            <span class="title-2st">餐廳推薦</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="li-1st">
+                <a href="./contact.html"><span class="title-1st">關於我們</span></a>
+            </li>
+            <li class="li-1st">
+                <a href="https://wowfoods.wowprime.com/branch.php"><span class="title-1st">集團品牌</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="cart-box">
+        <div class="cart-title">我的購物車（3）</div>
+        <div class="close-btn"></div>
+        <div class="cart-tab-box">
+            <div class="tab-normal active" data-cart-tab="1">一般商品</div>
+            <div class="tab-pre-order" data-cart-tab="2">預購商品</div>
+        </div>
+        <div class="cart-product-list">
+            <ul class="list-normal" data-cart-tab="1">
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type1">常溫</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type2">冷凍</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type3">冷藏</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-pre-order" data-cart-tab="2">
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type1">常溫</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type2">冷凍</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="tag type3">冷藏</div>
+                        <div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+                        <div class="price-box">
+                            <div class="price">NT$1,386</div>
+                            <div class="product-num">x1</div>
+                        </div>
+                    </div>
+                    <div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-checkout"><a href="./shopping-detail.html">訂單結帳</a></div>
+    </div>
+    <div class="main-container">
+        <section class="banner-sec branch-banner">
+            <div class="container">
+                <div class="banner-container">
+                    <div class="banner-title">
+                        集團品牌
+                    </div>
+                    <div class="banner-desc">
+                        王品旗下品牌任你選，想吃什麼就吃什麼
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wow-fresh-breadcrumb branch-breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">集團品牌</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="branch-sec">
+            <div class="container">
+                <div class="branch-container">
+                    <a class="branch-logo" href="https://www.yakiyan.com/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b01.png" alt="原燒">
+                    </a>
+                    <a class="branch-logo" href="https://www.wangsteak.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b02.png" alt="王品">
+                    </a>
+                    <a class="branch-logo" href="https://www.giguo.com.tw/index.html" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b03.png" alt="聚">
+                    </a>
+                    <a class="branch-logo" href="https://www.ikki.com.tw/index.html" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b04.png" alt="藝奇">
+                    </a>
+                    <a class="branch-logo" href="https://www.chamonix.com.tw/index.html" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b05.png" alt="夏慕尼">
+                    </a>
+                    <a class="branch-logo" href="https://www.tasty.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b06.png" alt="西提">
+                    </a>
+                    <a class="branch-logo" href="https://www.tokiya.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b07.png" alt="陶板屋">
+                    </a>
+                    <a class="branch-logo" href="https://www.pinnada.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b08.png" alt="品田">
+                    </a>
+                    <a class="branch-logo" href="https://www.12hotpot.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b09.png" alt="石二鍋">
+                    </a>
+                    <a class="branch-logo" href="https://www.sufood.com.tw/index.html" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b10.png" alt="Su">
+                    </a>
+                    <a class="branch-logo" href="https://www.hot-7.com/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b11.png" alt="hot 7">
+                    </a>
+                    <a class="branch-logo" href="https://www.putien.com.tw/index.html#" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b12.png" alt="浦田">
+                    </a>
+                    <a class="branch-logo" href="http://www.muvietdining.com/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b13.png" alt="沐越">
+                    </a>
+                    <a class="branch-logo" href="http://www.chinhuajiao.com/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b14.png" alt="青花驕">
+                    </a>
+                    <a class="branch-logo" href="http://www.xiangduck.com.tw/index.html" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b15.png" alt="享鴨">
+                    </a>
+                    <a class="branch-logo" href="http://www.veggtable.com/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b16.png" alt="風和日麗">
+                    </a>
+                    <a class="branch-logo" href="http://www.phofun.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b17.png" alt="樂越">
+                    </a>
+                    <a class="branch-logo" href="https://www.facebook.com/12MINI/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b18.png" alt="12">
+                    </a>
+                    <a class="branch-logo" href="http://www.thewang.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b19.png" alt="the wang">
+                    </a>
+                    <a class="branch-logo" href="http://www.meetingpoints.com.tw/index.php" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b20.png" alt="薈麵點">
+                    </a>
+                    <a class="branch-logo" href="http://www.wagyushabu.com.tw/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b21.png" alt="和牛刷">
+                    </a>
+                    <a class="branch-logo" href="https://www.facebook.com/tingshiset/" target="_blank">
+                        <img class="img-fluid" src="images/_page/branch/b22.png" alt="町食">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="to-top"><img src="images/top.svg"></div>
+    <footer>
+        <div class="top-box">
+            <div class="inner-wrap">
+                <div class="logo-box for-desktop"><img src="images/wowfoods_logo-footer.svg" alt="王品瘋美食購物網"></div>
+                <div class="right-box">
+                    <div class="guide-col">
+                        <div class="title">關於我們</div>
+                        <ul>
+                            <li><a href="./contact.html">聯絡我們</a></li>
+                            <li><a href="https://wowfoods.wowprime.com/branch.php">集團品牌</a></li>
+                            <li><a href="./privacy.html">隱私權政策</a></li>
+                        </ul>
+                    </div>
+                    <div class="guide-col">
+                        <div class="title">購物須知</div>
+                        <ul>
+                            <li><a href="./notice.html#shopping">運送及付款方式</a></li>
+                            <li><a href="./notice.html#points">瘋點數使用說明</a></li>
+                        </ul>
+                    </div>
+                    <div class="guide-col">
+                        <div class="logo-box for-mobile"><img src="images/wowfoods_logo-footer.svg" alt="王品瘋美食購物網">
+                        </div>
+                        <ul>
+                            <li>電子郵件：<a href="mailto:wowfresh@wowprime.com">wowfresh@wowprime.com</a></li>
+                            <li>聯絡電話：<a href="tel:0809-098-599">0809-098-599</a> </li>
+                            <li>聯絡時間：週一 至 週五 10:00 - 17:00</li>
+                        </ul>
+                        <div class="community-btn">
+                            <span class="btn-fb"><a href="https://www.facebook.com/WangprimeMart" target="_blank"><img
+                                        src="images/btn-facebook.svg" alt=""></a></span>
+                            <span class="btn-line"><a
+                                    href="https://page.line.me/?accountId=vyf9056i&openerPlatform=native&openerKey=unifiedSearch#mst_challenge=SOgOfvEdBMXwUrrLJQXyKCOtAcQ5gHHuS7L3JQ75pOQ"
+                                    target="_blank"> <img src="images/btn-line.svg" alt=""></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="inner-wrap">COPYRIGHT © 2021 王品瘋美食購物網 - ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+</body>
+
+<script>
+
+
+</script>
+
+</html>

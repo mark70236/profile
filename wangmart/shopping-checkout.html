@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width , minimum-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+	<title>王品瘋美食購物網,線上生鮮購物網 | 王品集團</title>
+	<meta name="description" content="王品瘋美食購物網提供新鮮嚴選的生鮮品、肉品、海鮮、日常飲食與精選季節禮盒，待在家裡也能品嘗美味跟享瘦健康，立即加入會員享優惠！">
+	<meta name="keywords" content="王品,王品集團,王品瘋美食,購物,生鮮,牛肉,宅配美食,居家訂購,冷凍,冷藏,常溫">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ezz-file.com/files/wangpin/frontend/demo/index.html">
+	<meta property="og:title" content="王品瘋美食購物網,線上生鮮購物網 | 王品集團">
+	<meta property="og:description" content="王品瘋美食購物網提供新鮮嚴選的生鮮品、肉品、海鮮、日常飲食與精選季節禮盒，待在家裡也能品嘗美味跟享瘦健康，立即加入會員享優惠！">
+	<meta property="og:image" content="https://ezz-file.com/files/wangpin/frontend/demo/images/og-img.jpg">
+
+	<link rel="stylesheet" href="plugin/reset/min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="plugin/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugin/aos/aos.css">
+	<link rel="stylesheet" href="plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/widget.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/shopping-checkout.css">
+	<script src="plugin/jquery/3.6.0.min.js"></script>
+	<script src="plugin/jqueryui/1.12.1.min.js"></script>
+	<script src="plugin/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+	<script src="plugin/swiper/swiper-bundle.min.js"></script>
+	<script src="plugin/aos/aos.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/shopping.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VRQQJZ22PL"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-VRQQJZ22PL');
+	</script>
+</head>
+
+<body class="shopping-checkout">
+	<header>
+		<div class="top-box">
+			<div class="inner-wrap">
+				<div class="btn-box">
+					<span class="contact-us"><a href="#">聯絡我們</a></span>
+					<!-- <span class="login"><a href="#">登入</a></span> -->
+					<span class="member-box"><a href="./member.html"><i class="fa fa-user-o"
+								aria-hidden="true"></i>陳小姐</a></span>
+					<span class="logout"><a href="#">登出</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-box">
+			<div class="inner-wrap">
+				<div class="logo"><a href="./index.html"><img src="images/wowfoods_logo.svg"></a></div>
+				<div class="logo-active"><a href="./index.html"><img src="images/wowfoods_logo.svg"></a></div>
+				<div class="menu-btn-mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
+				<div class="btn-box">
+					<span class="cart"><a href="shopping-detail.html">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span class="notice-num">3</span>
+					</a></span>
+					<span class="search">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<div class="child-list">
+							<div class="inner-wrap">
+								<div class="flex-box">
+									<form autocomplete="off">
+										<div class="row">
+											<div class="form-group col-md-3 col-xs-12">
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option value="0">分類</option>
+													<option value="1">分類1</option>
+													<option value="2">分類2</option>
+													<option value="3">分類3</option>
+													<option value="4">分類4</option>
+												</select>
+											</div>
+											<div class="form-group col-md-9 col-xs-12">
+												<div class="input-box">
+													<i class="fa fa-search" aria-hidden="true"></i>
+													<input type="text" class="form-control" id="keywords"
+														placeholder="關鍵字搜尋">
+													<div class="btn-search"> <a href="./search-result.html"></a>搜尋</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tag-box">
+											<div class="row-title">近期熱搜詞<i class="fa fa-fire" aria-hidden="true"></i>
+											</div>
+											<ul class="tag-group">
+												<li class="tag"><a href="#">母親節特惠</a></li>
+												<li class="tag"><a href="#">端午節優惠</a></li>
+												<li class="tag"><a href="#">王品推薦</a></li>
+												<li class="tag"><a href="#">輕鬆料理</a></li>
+												<li class="tag"><a href="#">牛小排</a></li>
+												<li class="tag"><a href="#">餐廳推薦</a></li>
+											</ul>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</span>
+				</div>
+				<ul class="header-menu">
+					<li class="header-anchor-btn-1" data-anchor="1">
+						<span> <a href="./promotion.html">優惠活動</a> </span>
+						<div class="child-list">
+							<div class="inner-wrap">
+								<div class="title-box">活動專區 ></div>
+								<ul class="inner-list">
+									<li class="list-row">
+										<a href="./promotion-2021cny.html">買一送一</a>
+									</li>
+									<li class="list-row">
+										<a href="#">熱賣年菜</a>
+									</li>
+									<li class="list-row">
+										<a href="#">母親節活動</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意活動示意活動示意活動</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意活動示意活動</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意活動示意活動</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意活動示意活動</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意活動示意活動</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意活動示意活動</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="header-anchor-btn-2" data-anchor="2">
+						<span>產品介紹</span>
+						<div class="child-list">
+							<div class="inner-wrap">
+								<div class="title-box">產品介紹 ></div>
+								<ul class="inner-list">
+									<li class="list-row">
+										<a href="./product-meat.html">嚴選肉品</a>
+									</li>
+									<li class="list-row">
+										<a href="#">生猛海鮮</a>
+									</li>
+									<li class="list-row">
+										<a href="#">新鮮蔬果</a>
+									</li>
+									<li class="list-row">
+										<a href="#">輕鬆調理</a>
+									</li>
+									<li class="list-row">
+										<a href="#">日常乾貨</a>
+									</li>
+									<li class="list-row">
+										<a href="#">茶飲零食</a>
+									</li>
+									<li class="list-row">
+										<a href="#">精選廚具</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意項目</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意項目</a>
+									</li>
+									<li class="list-row">
+										<a href="#">示意項目</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="header-anchor-btn-3" data-anchor="3">
+						<span> <a href="./gourmet-diary.html">美食日誌</a> </span>
+						<div class="child-list">
+							<div class="inner-wrap">
+								<div class="title-box">產品介紹 ></div>
+								<ul class="inner-list">
+									<li class="list-row">
+										<a href="#">家桌料理</a>
+									</li>
+									<li class="list-row">
+										<a href="#">美味好食</a>
+									</li>
+									<li class="list-row">
+										<a href="#">餐廳推薦</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="header-anchor-btn-4" data-anchor="4"><span><a href="./contact.html">關於我們</a></span></li>
+					<li class="header-anchor-btn-5" data-anchor="5"><span><a
+								href="https://wowfoods.wowprime.com/branch.php">集團品牌</a></span></li>
+				</ul>
+
+
+			</div>
+		</div>
+	</header>
+
+	<div class="header-menu-mask"></div>
+	<div class="header-menu-for-mobile">
+		<div class="close-btn"></div>
+		<ul class="header-menu">
+			<li class="li-1st">
+				<span><a href="./promotion.html">優惠活動</a></span>
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+				<ul>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st"> <a href="./promotion-2021cny.html">買一送一</a> </span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">熱賣年菜</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">母親節活動</span>
+						</div>
+					</li>
+
+				</ul>
+			</li>
+			<li class="li-1st">
+				<span><a href="./product-meat.html">產品介紹</a></span>
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+				<ul>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st"> <a href="./product-meat-beef.html">嚴選肉品</a></span>
+							<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+						</div>
+						<!-- <ul>
+                        <li>項目一</li>
+                        <li>項目二</li>
+                        <li>項目三</li>
+                        <li>項目四</li>
+                    </ul> -->
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">生猛海鮮</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">海鮮蔬果</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">輕鬆調理</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">日常乾貨</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">茶飲零食</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">精選廚具</span>
+						</div>
+					</li>
+
+				</ul>
+			</li>
+			<li class="li-1st">
+				<span><a href="./gourmet-diary.html">美食日誌</a></span>
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+				<ul>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">家桌料理</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">美味好食</span>
+						</div>
+					</li>
+					<li class="li-2st">
+						<div class="title-box">
+							<span class="title-2st">餐廳推薦</span>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="li-1st">
+				<a href="./contact.html"><span class="title-1st">關於我們</span></a>
+			</li>
+			<li class="li-1st">
+				<a href="https://wowfoods.wowprime.com/branch.php"><span class="title-1st">集團品牌</span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="cart-box">
+		<div class="cart-title">我的購物車（3）</div>
+		<div class="close-btn"></div>
+		<div class="cart-tab-box">
+			<div class="tab-normal active" data-cart-tab="1">一般商品</div>
+			<div class="tab-pre-order" data-cart-tab="2">預購商品</div>
+		</div>
+		<div class="cart-product-list">
+			<ul class="list-normal" data-cart-tab="1">
+				<li>
+					<div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+					</div>
+					<div class="right-box">
+						<div class="tag type1">常溫</div>
+						<div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+						<div class="price-box">
+							<div class="price">NT$1,386</div>
+							<div class="product-num">x1</div>
+						</div>
+					</div>
+					<div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</li>
+				<li>
+					<div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+					</div>
+					<div class="right-box">
+						<div class="tag type2">冷凍</div>
+						<div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+						<div class="price-box">
+							<div class="price">NT$1,386</div>
+							<div class="product-num">x1</div>
+						</div>
+					</div>
+					<div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</li>
+				<li>
+					<div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+					</div>
+					<div class="right-box">
+						<div class="tag type3">冷藏</div>
+						<div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+						<div class="price-box">
+							<div class="price">NT$1,386</div>
+							<div class="product-num">x1</div>
+						</div>
+					</div>
+					<div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</li>
+			</ul>
+			<ul class="list-pre-order" data-cart-tab="2">
+				<li>
+					<div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+					</div>
+					<div class="right-box">
+						<div class="tag type1">常溫</div>
+						<div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+						<div class="price-box">
+							<div class="price">NT$1,386</div>
+							<div class="product-num">x1</div>
+						</div>
+					</div>
+					<div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</li>
+				<li>
+					<div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+					</div>
+					<div class="right-box">
+						<div class="tag type2">冷凍</div>
+						<div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+						<div class="price-box">
+							<div class="price">NT$1,386</div>
+							<div class="product-num">x1</div>
+						</div>
+					</div>
+					<div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</li>
+				<li>
+					<div class="img-box"><a href="./product-item.html"><img src="images/_page/product-image.jpg"></a>
+					</div>
+					<div class="right-box">
+						<div class="tag type3">冷藏</div>
+						<div class="product-name"><a href="./product-item.html">義式調味烤半雞</a></div>
+						<div class="price-box">
+							<div class="price">NT$1,386</div>
+							<div class="product-num">x1</div>
+						</div>
+					</div>
+					<div class="remove-btn remove-cart-item-btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="btn-checkout"><a href="./shopping-detail.html">訂單結帳</a></div>
+	</div>
+
+	<div class="step-box">
+		<div class="steps">
+			<span class="done">
+				<span>1</span>
+				<span>購物清單</span>
+			</span>
+			<i class="dec dec-done"></i>
+			<span class="done">
+				<span>2</span>
+				<span>確認優惠</span>
+			</span>
+			<i class="dec dec-done"></i>
+			<span class="active">
+				<span>3</span>
+				<span>填寫資料</span>
+			</span>
+			<i class="dec"></i>
+			<span>
+				<span>4</span>
+				<span>結帳付款</span>
+			</span>
+		</div>
+	</div>
+	<div class="container">
+		<div class="checkout-details-box">
+			<div class="collapse-title-row">
+				<div class="collapse-title">
+					本次結帳
+					<span class="title-type"> 冷凍品即時出貨 </span>
+					，消費金額總計
+					<span class="price-unit">$<span class="total-price">3,300</span></span>
+
+				</div>
+				<div class="collapse-btn">
+					<i class="fa fa-angle-up" aria-hidden="true"></i>
+				</div>
+			</div>
+
+			<div class="collapse-content-box">
+				<div class="sort-title">冷凍品</div>
+				<div class="purchase-list-row">
+					<div class="item-name">挪威超大極厚薄鹽鯖魚180~220g/片</div>
+					<div class="item-row-m">
+						<div class="item-quantity">1</div>
+						<div class="item-price"> <span class="price-unit">$</span>1,020</div>
+					</div>
+				</div>
+				<div class="purchase-list-row">
+					<div class="item-name">蔥香滷豬腳</div>
+					<div class="item-row-m">
+						<div class="item-quantity">1</div>
+						<div class="item-price"> <span class="price-unit">$</span>1,000</div>
+					</div>
+				</div>
+				<div class="purchase-list-row">
+					<div class="item-name">蔥香滷豬腳 <span class="add-on-price">加購價</span></div>
+					<div class="item-row-m">
+						<div class="item-quantity">1</div>
+						<div class="item-price"> <span class="price-unit">$</span>1,000</div>
+					</div>
+				</div>
+				<div class="coupon-delivery-row">
+					<div class="coupon-row">
+						優惠卷已使用
+						<span class="coupon-tag">#E7GO 優惠券折抵300元</span>
+						<span class="coupon-tag">#9417 優惠券折抵150元</span>
+					</div>
+					<div class="delivery-row">
+						運費 <span class="price-unit">$</span><span class="delivery-price">300</span>
+					</div>
+				</div>
+				<div class="fee-row">
+					<div class="fee-col">
+						<div class="fee-title">商品總金額 </div>
+						<div class="price-row"><span class="price-unit">$</span> <span class="price">3,020</span></div>
+					</div>
+					<div class="calculate-icn">
+						<img src="images/_page/shopping/minus.svg" alt="">
+					</div>
+					<div class="fee-col">
+						<div class="fee-title"> 活動折抵 </div>
+						<div class="price-row"><span class="price-unit">$</span> <span class="price">450</span></div>
+					</div>
+					<div class="calculate-icn">
+						<img src="images/_page/shopping/plus.svg" alt="">
+					</div>
+					<div class="fee-col">
+						<div class="fee-title"> 運費</div>
+						<div class="price-row"><span class="price-unit">$</span> <span class="price">300</span></div>
+					</div>
+					<div class="calculate-icn">
+						<img src="images/_page/shopping/minus.svg" alt="">
+					</div>
+					<div class="fee-col">
+						<div class="fee-title"> 瘋點數折抵</div>
+						<div class="price-row"><span class="price-unit">$</span> <span class="price">20</span></div>
+					</div>
+					<div class="calculate-icn">
+						<img src="images/_page/shopping/equal.svg" alt="">
+					</div>
+					<div class="fee-col total">
+						<div class="fee-title">訂單總金額 </div>
+						<div class="price-row"><span class="price-unit">$</span> <span class="price">3,300</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="checkout-form-section wp-form">
+			<!-- <form action="" class=""> -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="checkout-col ">
+						<div class="col-title">配送方式</div>
+						<div class="form-radio-row delivery-option-row">
+							<div class="form-check">
+								<label class="form-check-label custom-check" for="shop-pick">
+									<input class="form-check-input" type="radio" name="delivery-method" id="shop-pick"
+										value="delivery-option1" checked>
+									王品店取
+									<span class="check-icn"></span>
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label custom-check" for="home-delivery">
+									<input class="form-check-input" type="radio" name="delivery-method"
+										id="home-delivery" value="delivery-option2">
+									宅配到府
+									<span class="check-icn"></span>
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label custom-check" for="convenience">
+									<input class="form-check-input" type="radio" name="delivery-method" id="convenience"
+										value="delivery-option3">
+									超商取貨
+									<span class="check-icn"></span>
+								</label>
+							</div>
+
+						</div>
+						<div class="delivery-option-container delivery-option1" style="display: block;">
+							<div class="form-container">
+								<div class="btn-row">
+									<button class="btn addr-btn">＋ 從地圖選擇</button>
+									<button class="btn addr-btn" data-toggle="modal" data-target="#select-store">＋
+										常用門市選擇</button>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 delivery-col">
+										<div class="form-group form-row-input">
+											<label for="" class="col-form-label">門市名稱</label>
+											<input type="text" class="form-control" id="convenience-name" placeholder=""
+												value="台中五權店">
+										</div>
+									</div>
+									<div class="col-lg-6 delivery-col">
+										<div class="form-group form-row-input">
+											<label for="" class="col-form-label">門市地址</label>
+											<input type="text" class="form-control" id="convenience-addr" placeholder=""
+												value="台中市西區五權路131號">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="delivery-option-container delivery-option3" style="display: none;">
+							<div class="form-container">
+								<div class="btn-row">
+									<button class="btn addr-btn">＋ 從地圖選擇</button>
+									<button class="btn addr-btn" data-toggle="modal" data-target="#select-store">＋
+										常用門市選擇</button>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 delivery-col">
+										<div class="form-group form-row-input">
+											<label for="" class="col-form-label">門市名稱</label>
+											<input type="text" class="form-control" id="shop-name" placeholder=""
+												value="五權門市">
+										</div>
+									</div>
+									<div class="col-lg-6 delivery-col">
+										<div class="form-group form-row-input">
+											<label for="" class="col-form-label">門市地址</label>
+											<input type="text" class="form-control" id="shop-addr" placeholder=""
+												value="台中市西區五權路131號">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="checkout-col ">
+						<div class="col-title">付款方式</div>
+						<div class="form-radio-row payment-option-row">
+							<div class="form-check ">
+								<label class="form-check-label custom-check" for="credit-card">
+									信用卡
+									<input class="form-check-input" type="radio" name="pay-method" id="credit-card"
+										value="" checked>
+									<span class="check-icn"></span>
+								</label>
+							</div>
+							<div class="form-check ">
+								<label class="form-check-label custom-check" for="atm">
+									ATM
+									<input class="form-check-input" type="radio" name="pay-method" id="atm" value="">
+									<span class="check-icn "></span>
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label custom-check" for="pay-in-store">
+									王品店付（只配合店取）
+									<input class="form-check-input" type="radio" name="pay-method" id="pay-in-store"
+										value="">
+									<span class="check-icn"></span>
+								</label>
+							</div>
+							<div class="form-check ">
+								<label class="form-check-label custom-check" for="wow-pay">
+									瘋PAY
+									<span class="pay-verify" data-toggle="modal"
+										data-target="#phone-verification">手機驗證</span>
+									<input class="form-check-input" type="radio" name="pay-method" id="wow-pay"
+										value="">
+									<span class="check-icn"></span>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="wow-pay-container">
+							<div class="form-container">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group form-row-select">
+											<label for="" class=" col-form-label">錢包</label>
+											<select class="form-control wk-select wow-pay-select" id="">
+												<option value="0">請選擇錢包</option>
+												<option value="1">錢包1</option>
+												<option value="2">錢包2</option>
+											</select>
+											<!-- 
+													<input type="text" class="form-control not-required" id="company-name"
+														placeholder="請務必填寫正確，請輸入公司全名"> -->
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="wow-pay-noted">
+								- 如需使用瘋PAY支付，請先進行手機驗證再選擇錢包卡片
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="checkout-col ">
+						<div class="col-title">發票資料</div>
+						<div class="form-radio-row receipt-type-row">
+							<div class="form-check">
+								<label class="form-check-label custom-check" for="gridRadios1">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+										value="receipt-type1" checked>
+									載具發票
+									<span class="check-icn"></span>
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label custom-check" for="gridRadios2">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+										value="receipt-type2">
+									電子發票 | 公司用
+									<span class="check-icn"></span>
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label custom-check" for="gridRadios3">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+										value="receipt-type3">
+									發票捐贈
+									<span class="check-icn"></span>
+								</label>
+							</div>
+
+						</div>
+						<div class="receipt-container receipt-form receipt-type1" style="display: block;">
+							<div class="form-container">
+								<div class="form-check form-check-row">
+									<label class="form-check-label custom-check" for="receipt01">
+										<input class="form-check-input" type="radio" name="receipt0" id="receipt01"
+											value="option1" checked>
+										會員載具
+										<span class="check-icn"></span>
+									</label>
+								</div>
+								<div class="form-check form-check-row">
+									<label class="form-check-label custom-check" for="receipt02">
+										<input class="form-check-input" type="radio" name="receipt0" id="receipt02"
+											value="option2">
+										手機條碼載具
+										<span class="check-icn"></span>
+									</label>
+									<div class="colum-in-flex-box"><input type="text"
+											class="form-control form-input not-required" id="mobile-carrier"
+											placeholder="含斜線及英數碼，共8碼"></div>
+								</div>
+								<div class="form-check form-check-row">
+									<label class="form-check-label custom-check" for="receipt03">
+										<input class="form-check-input" type="radio" name="receipt0" id="receipt03"
+											value="option3">
+										自然人憑證載具
+										<span class="check-icn"></span>
+									</label>
+									<div class="colum-in-flex-box"><input type="text"
+											class="form-control form-input not-required" id="citizen-carrier"
+											placeholder="含英數碼，共16碼"></div>
+								</div>
+							</div>
+
+							<div class="receipt-terms">
+								- 若無手機條碼/自然人憑證載具，請至<a href="">財務部電子發票整合服務平台</a>申請
+							</div>
+						</div>
+
+						<div class="receipt-container receipt-type2">
+							<div class="form-container">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group form-row-input">
+											<label for="" class=" col-form-label">公司抬頭</label>
+											<input type="text" class="form-control not-required" id="company-name"
+												placeholder="請務必填寫正確，請輸入公司全名">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group form-row-input">
+											<label for="" class="col-form-label">統一編號</label>
+											<input type="text" class="form-control not-required" id="tax-id-number"
+												placeholder="請輸入統一編號">
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="receipt-terms">
+								<ul>
+									<li>發票不直接寄送 </li>
+									<li>根據財政部「電子發票實施作業要點」，於王品瘋美食購物網的網站消費開立之「雲端發票」將不主動寄送紙本發票，王品瘋美食購物網亦會將發票上傳至「財政部電子發票整合服務平台」，並以Email發送發票開立通知信給您，以茲證明
+									</li>
+									<li>相關資料請參考財政部電子發票整合服務平台 (財政部核准文號：0940211766號)</li>
+									<li>查詢發票明細請至網站「 <a href="">訂單列表</a> 」</li>
+									<li>若您的發票中獎，我們將會主動寄發紙本發票至訂購人地址</li>
+									<li>您欲索取紙本發票請向客服專線聯繫</li>
+									<li>瘋美食購物網保留接受訂單與否的權利</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="receipt-container receipt-type3">
+							<div class="form-container">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group form-row-input">
+											<label for="" class="col-form-label">捐贈單位</label>
+											<input type="text" class="form-control not-required" id="donate-to"
+												placeholder="請輸入捐贈單位">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group form-row-input">
+											<label for="" class="col-form-label">愛心碼查詢</label>
+											<span class="donate-search"><a
+													href="https://www.einvoice.nat.gov.tw/APCONSUMER/BTC603W/"
+													target="_blank">查詢</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 checkout-left-col">
+					<div class="checkout-col ">
+						<div class="receiver-row">
+							<div class="col-title">訂購人資料</div>
+							<div class="col-right">
+								<button class="btn addr-btn" data-toggle="modal" data-target="#choose-addr">+
+									地址清單選取</button>
+							</div>
+						</div>
+						<div class="checkout-form">
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">姓名</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="order-name" placeholder="請輸入您的真實姓名">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">手機</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="order-mobile" placeholder="請輸入您的手機">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">E-mail</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="order-email" placeholder="請輸入您的信箱">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">電話</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="order-phone" placeholder="請輸入您的電話">
+								</div>
+							</div>
+							<div class="form-group row address-sec">
+								<label for="" class="col-sm-2 col-form-label">地址</label>
+								<div class="col-sm-10 row address-row">
+									<div class="col-sm-6 addr-row-item">
+										<select class="form-control wk-select" id="order-addr-city">
+											<option value="0">縣市</option>
+											<option value="1">分類1</option>
+											<option value="2">分類2</option>
+										</select>
+									</div>
+									<div class="col-sm-6 addr-row-item">
+										<select class="form-control wk-select" id="order-addr-dist">
+											<option value="0">鄉鎮</option>
+											<option value="1">分類1</option>
+											<option value="2">分類2</option>
+										</select>
+									</div>
+									<div class="col-sm-6 addr-row-item">
+										<input type="text" class="form-control" id="order-addr-postcode"
+											placeholder="郵遞區號">
+									</div>
+									<div class="col-sm-12 addr-row-item2">
+										<input type="text" class="form-control" id="order-addr-details"
+											placeholder="詳細地址（村/里/路/巷/弄/號/樓）">
+									</div>
+									<div class="col-sm-12 addr-row-item2">
+										<input type="text" class="form-control not-required" id="order-addr-other"
+											placeholder="地址補充說明，例：公司、部門、住家社區名稱，可留空">
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 checkout-right-col">
+					<div class="checkout-col ">
+						<div class="receiver-row">
+							<div class="col-title">收件人資料</div>
+							<div class="col-right">
+								<div class="form-group">
+									<div class="form-check">
+										<label class="form-check-label custom-check" for="gridCheck">
+											<input class="form-check-input" type="checkbox" id="gridCheck">
+											同訂購人
+											<span class="check-icn"></span>
+										</label>
+									</div>
+								</div>
+								<button class="btn addr-btn" data-toggle="modal" data-target="#choose-addr">+
+									地址清單選取</button>
+							</div>
+						</div>
+						<div class="checkout-form">
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">姓名</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="receiver-name" placeholder="請輸入您的真實姓名">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">手機</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="receiver-mobile" placeholder="請輸入您的手機">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">E-mail</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="receiver-email" placeholder="請輸入您的信箱">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="" class="col-sm-2 col-form-label">電話</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="receiver-phone" placeholder="請輸入您的電話">
+								</div>
+							</div>
+							<div class="form-group row address-sec">
+								<label for="" class="col-sm-2 col-form-label">地址</label>
+								<div class="col-sm-10 row address-row">
+									<div class="col-sm-6 addr-row-item">
+										<select class="form-control wk-select" id="receiver-addr-city">
+											<option value="0">縣市</option>
+											<option value="1">分類1</option>
+											<option value="2">分類2</option>
+										</select>
+									</div>
+									<div class="col-sm-6 addr-row-item">
+										<select class="form-control wk-select" id="receiver-addr-dist">
+											<option value="0">鄉鎮</option>
+											<option value="1">分類1</option>
+											<option value="2">分類2</option>
+										</select>
+									</div>
+									<div class="col-sm-6 addr-row-item">
+										<input type="text" class="form-control" id="receiver-addr-postcode"
+											placeholder="郵遞區號">
+									</div>
+									<div class="col-sm-12 addr-row-item2">
+										<input type="text" class="form-control" id="receiver-addr-details"
+											placeholder="詳細地址（村/里/路/巷/弄/號/樓）">
+									</div>
+									<div class="col-sm-12 addr-row-item2">
+										<input type="text" class="form-control not-required" id="receiver-addr-other"
+											placeholder="地址補充說明，例：公司、部門、住家社區名稱，可留空">
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="checkout-col ">
+						<div class="col-title">訂單備註</div>
+						<div class="form-group row">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" id="remark" placeholder="備註（限20字）">
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="agreement-box">
+				<label class="form-check-label custom-check" for="agreement">
+					<!-- <input type="checkbox" id="agreement"> -->
+					<input class="form-check-input" type="checkbox" id="agreement" value="">
+					<span class="check-icn"></span>
+					<span>我瞭解並同意辦理退貨時，由瘋美食購物網代為處理發票及銷貨退回證明，以加速退貨退款作業。</span>
+				</label>
+			</div>
+			<div class="checkout-btn-sec">
+				<button class="btn btn-outline"> <a href="./shopping-discount.html">上一步</a> </button>
+				<button type="submit" class="btn btn-red btn-next" disabled> <a
+						href="./checkout-success.html">立即結帳</a></button>
+			</div>
+
+			<!-- </form> -->
+		</div>
+	</div>
+
+	<div class="to-top"><img src="images/top.svg"></div>
+	<footer>
+		<div class="top-box">
+			<div class="inner-wrap">
+				<div class="logo-box for-desktop"><img src="images/wowfoods_logo-footer.svg" alt="王品瘋美食購物網"></div>
+				<div class="right-box">
+					<div class="guide-col">
+						<div class="title">關於我們</div>
+						<ul>
+							<li><a href="./contact.html">聯絡我們</a></li>
+							<li><a href="https://wowfoods.wowprime.com/branch.php">集團品牌</a></li>
+							<li><a href="./privacy.html">隱私權政策</a></li>
+						</ul>
+					</div>
+					<div class="guide-col">
+						<div class="title">購物須知</div>
+						<ul>
+							<li><a href="./notice.html#shopping">運送及付款方式</a></li>
+							<li><a href="./notice.html#points">瘋點數使用說明</a></li>
+						</ul>
+					</div>
+					<div class="guide-col">
+						<div class="logo-box for-mobile"><img src="images/wowfoods_logo-footer.svg" alt="王品瘋美食購物網">
+						</div>
+						<ul>
+							<li>電子郵件：<a href="mailto:wowfresh@wowprime.com">wowfresh@wowprime.com</a></li>
+							<li>聯絡電話：<a href="tel:0809-098-599">0809-098-599</a> </li>
+							<li>聯絡時間：週一 至 週五 10:00 - 17:00</li>
+						</ul>
+						<div class="community-btn">
+							<span class="btn-fb"><a href="https://www.facebook.com/WangprimeMart" target="_blank"><img
+										src="images/btn-facebook.svg" alt=""></a></span>
+							<span class="btn-line"><a
+									href="https://page.line.me/?accountId=vyf9056i&openerPlatform=native&openerKey=unifiedSearch#mst_challenge=SOgOfvEdBMXwUrrLJQXyKCOtAcQ5gHHuS7L3JQ75pOQ"
+									target="_blank"> <img src="images/btn-line.svg" alt=""></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="inner-wrap">COPYRIGHT © 2021 王品瘋美食購物網 - ALL RIGHTS RESERVED.</div>
+		</div>
+	</footer>
+
+	<!-- 地址清單彈窗 -->
+
+	<div class="modal fade" id="choose-addr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog wp-modal-dialog addr-modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content wp-modal-content addr-content ">
+				<div class="wp-modal-close" data-dismiss="modal" aria-label="Close"></div>
+				<div class="addr-modal-header">
+					<h2 class="modal-title wp-modal-title">地址清單</h2>
+					</button>
+				</div>
+				<div class="modal-body wp-modal-body">
+					<div class="addr-sec">
+						<div class="addr-row addr-row-title">
+							<span class="col-01"></span>
+							<span class="col-02">名稱</span>
+							<span class="col-03">聯絡人</span>
+							<span class="col-04">地址</span>
+						</div>
+
+						<div class="addr-row addr-row-content">
+							<div class="form-check">
+								<label class="addr-label-row custom-check" for="addr-check-1">
+									<input type="radio" checked="checked" name="addr-list" id="addr-check-1"
+										value="option1">
+									<span class="check-icn"></span>
+									<span class="col-02">會員預設</span>
+									<span class="col-03">王大品</span>
+									<span class="col-04">台中市西屯區台灣大道四段771號2樓 </span>
+								</label>
+							</div>
+						</div>
+
+						<div class="addr-row addr-row-content">
+							<div class="form-check">
+								<label class="addr-label-row custom-check" for="addr-check-2">
+									<input type="radio" name="addr-list" id="addr-check-2" value="option2">
+									<span class="check-icn"></span>
+									<span class="col-02">公司</span>
+									<span class="col-03">王大品</span>
+									<span class="col-04">台北市中山北路二段33號2樓 </span>
+								</label>
+							</div>
+						</div>
+
+						<div class="addr-row addr-row-content">
+							<div class="form-check">
+								<label class="addr-label-row custom-check" for="addr-check-3">
+									<input type="radio" name="addr-list" id="addr-check-3" value="option3">
+									<span class="check-icn"></span>
+									<span class="col-02">家裏</span>
+									<span class="col-03">王大品</span>
+									<span class="col-04">台北市中山北路二段33號2樓 </span>
+								</label>
+							</div>
+						</div>
+
+						<div class="addr-row addr-row-content">
+							<div class="form-check">
+								<label class="addr-label-row custom-check" for="addr-check-4">
+									<input type="radio" name="addr-list" id="addr-check-4" value="option4">
+									<span class="check-icn"></span>
+									<span class="col-02">家裏2</span>
+									<span class="col-03">王大品</span>
+									<span class="col-04">台中市西屯區台灣大道四段771號2樓 </span>
+								</label>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<div class="modal-btn">
+					<button type="button" class="btn btn-red btn-block">確認</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- 地址彈窗end -->
+
+	<!-- 常用門市彈窗 -->
+	<div class="modal fade" id="select-store" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog wp-modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content wp-modal-content">
+				<div class="wp-modal-close" data-dismiss="modal" aria-label="Close"></div>
+				<div class="wp-modal-header">
+					<h2 class="modal-title" id="exampleModalLongTitle">選擇常用門市</h2>
+				</div>
+				<div class="modal-body wp-modal-body">
+					<div class="pb-3 pt-1">
+						<select class="form-control wk-select" id="">
+							<option value="0">請選擇常用門市</option>
+							<option value="1">門市1</option>
+							<option value="2">門市2</option>
+						</select>
+
+					</div>
+					<div class="modal-btn pt-4">
+						<button type="submit" data-dismiss="modal" aria-label="Close"
+							class="btn btn-red btn-block">確認</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 手機驗證彈窗 -->
+	<div class="modal fade" id="phone-verification" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog wp-modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content wp-modal-content">
+				<div class="wp-modal-close" data-dismiss="modal" aria-label="Close"></div>
+				<div class="wp-modal-header">
+					<h2 class="modal-title" id="exampleModalLongTitle">手機驗證碼</h2>
+				</div>
+				<div class="modal-body wp-modal-body">
+					<div class="wp-modal-text">
+						已寄送驗證碼至0912345678，請填入驗證碼驗證，若您未收到驗證碼請按下方「重新寄送驗證碼」，謝謝！
+					</div>
+					<div>
+						<form class="wp-form" action="">
+							<div class="form-group">
+								<input type="tel" class="form-control" id="" aria-describedby="" placeholder="請輸入您的驗證碼">
+								<div class="verify-error">驗證碼錯誤</div>
+								<div class="countdown">剩餘時間 <span id="timer"></span> </div>
+							</div>
+							<div class="modal-btn verify-btn">
+								<button type="button" class="btn btn-red btn-block">驗證</button>
+							</div>
+							<div class="modal-btn resend-code">
+								<button type="button" class="btn btn-outline btn-block">重新寄送驗證碼</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- tooltip 模板 v1.2-->
+	<div>
+		<div class="wp-tooltip" id="tooltip-order-remove">
+			<img src="images/_page/tooltip-bookmark.svg" alt="">
+			<span class="tooltip-message"> 訂單已移除</span>
+			<img class="tooltip-close" src="images/_page/tooltip-close.svg" alt="">
+		</div>
+		<div class="wp-tooltip" id="tooltip-cart-add">
+			<img src="images/_page/tooltip-cart.svg" alt="">
+			<span class="tooltip-message"> 商品已加入<span style="text-decoration: underline;"><a
+						href="">購物車</a></span></span>
+			<img class="tooltip-close" src="images/_page/tooltip-close.svg" alt="">
+		</div>
+		<div class="wp-tooltip" id="tooltip-copy">
+			<img src="images/_page/tooltip-notification.svg" alt="">
+			<span class="tooltip-message">已複製成功</span>
+			<img class="tooltip-close" src="images/_page/tooltip-close.svg" alt="">
+		</div>
+		<div class="wp-tooltip" id="tooltip-common-remove">
+			<img src="images/_page/tooltip-bookmark.svg" alt="">
+			<span class="tooltip-message"> 已移除</span>
+			<img class="tooltip-close" src="images/_page/tooltip-close.svg" alt="">
+		</div>
+	</div>
+	<!-- tooltip 模板 v1.2 End-->
+</body>
+
+
+</html>

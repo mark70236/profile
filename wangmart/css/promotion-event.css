@@ -1,0 +1,203 @@
+@charset "utf-8";
+.banner-sec.promotion-banner {
+  background-image: url("../images/_page/promotion/promotion.jpg");
+}
+.promotion-sec {
+  padding-bottom: 130px;
+}
+.promotion-sec .promo-row {
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0px;
+}
+.promotion-sec .promo-row:first-child {
+  padding-top: 0px;
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-row {
+    border-bottom: 0px solid transparent;
+    padding: 20px 0px;
+  }
+}
+.promotion-sec .promo-row:hover .promo-tag {
+  background-color: #BE0E31;
+  opacity: 1;
+  z-index: 3;
+}
+.promotion-sec .promo-row:hover .promo-img {
+  opacity: 0.8;
+  z-index: 1;
+}
+.promotion-sec .promo-left {
+  height: 100%;
+}
+.promotion-sec .promo-tag {
+  z-index: 3;
+  position: absolute;
+  background-color: #df032e;
+  top: 0px;
+  padding: 15px;
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-tag {
+    padding: 5px 15px;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 5px;
+  }
+}
+.promotion-sec .promo-tag span {
+  display: block;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-tag span {
+    display: inline-block;
+  }
+}
+.promotion-sec .promo-tag .promo-year {
+  font-size: 14px;
+  font-family: 'nota sans';
+}
+@media screen and (max-width: 1199px) {
+  .promotion-sec .promo-tag .promo-year {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-tag .promo-year {
+    font-size: 20px;
+  }
+}
+.promotion-sec .promo-tag .promo-month-date {
+  font-family: 'nota sans';
+  font-size: 28px;
+  margin-top: -5px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-sec .promo-tag .promo-month-date {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-tag .promo-month-date {
+    font-size: 20px;
+  }
+  .promotion-sec .promo-tag .promo-month-date:before {
+    content: '.';
+    position: relative;
+    margin-left: -3px;
+  }
+}
+.promotion-sec .promo-tag .promo-text {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  color: #ededed;
+  margin-top: -5px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-sec .promo-tag .promo-text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-tag .promo-text {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}
+.promotion-sec .promo-img {
+  padding-left: 50px;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-img {
+    padding-left: 0px;
+  }
+}
+.promotion-sec .promo-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-img img {
+    object-fit: contain;
+    height: auto;
+  }
+}
+.promotion-sec .promo-right {
+  height: 100%;
+  padding: 20px 80px ;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .promotion-sec .promo-right {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promotion-sec .promo-right {
+    padding: 10px 0px 0px 0px;
+    text-align: left;
+  }
+}
+.promotion-sec .promo-right .promo-period {
+  font-size: 16px;
+  color: #df032e;
+  display: block;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-sec .promo-right .promo-period {
+    font-size: 14px;
+  }
+}
+.promotion-sec .promo-right a .promo-title {
+  color: #333;
+}
+.promotion-sec .promo-right h2 {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  white-space: normal;
+  -webkit-line-clamp: 1;
+}
+.promotion-sec .promo-right p {
+  color: #666;
+  font-size: 18px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  white-space: normal;
+  -webkit-line-clamp: 4;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .promotion-sec .promo-right p {
+    font-size: 16px;
+  }
+}
+.wp-pagination {
+  padding-top: 70px;
+}
+.wp-pagination .page-item .page-link {
+  padding: 7px 15px 9px 15px;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 0px;
+  margin-right: 3px;
+}
+.wp-pagination .page-item.active .page-link {
+  background-color: #333;
+  color: #fff;
+}
+.wp-pagination .page-item-more {
+  padding: .5rem .75rem;
+}

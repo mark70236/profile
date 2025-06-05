@@ -1,0 +1,116 @@
+@charset "utf-8";
+.banner-sec.contact-us-banner {
+  background-image: url("../images/_page/contact-us/contact-us-kv.jpg");
+  min-height: 500px;
+}
+.banner-sec.contact-us-banner .banner-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.banner-sec.contact-us-banner .banner-container .banner-title {
+  text-align: center;
+}
+.banner-sec.contact-us-banner .banner-container .banner-desc {
+  text-align: center;
+  font-size: 24px;
+}
+@media screen and (max-width: 1199px) {
+  .banner-sec.contact-us-banner .banner-container .banner-desc {
+    font-size: 22px;
+  }
+}
+.contact-us-breadcrumb {
+  background-color: #f7f7f7;
+  padding-bottom: 15px;
+}
+.contact-us-section {
+  background-color: #f7f7f7;
+}
+.contact-container {
+  padding-bottom: 100px;
+}
+.contact-card {
+  padding: 50px 60px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  min-height: 356px;
+}
+@media screen and (max-width: 992px) {
+  .contact-card {
+    min-height: 451px;
+    padding: 50px 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-card {
+    min-height: auto;
+  }
+}
+.contact-card .contact-card-title {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.contact-card .contact-card-title::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 6px;
+  height: 32px;
+  background-color: #df032e;
+}
+.contact-card .contact-info {
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  .contact-card .contact-info {
+    font-size: 16px;
+  }
+}
+.contact-card .contact-details {
+  display: block;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .contact-card .contact-details {
+    font-size: 16px;
+  }
+}
+.contact-card .contact-details a {
+  color: #333;
+}
+.contact-card .contact-details.contact-details-flex {
+  display: flex;
+}
+@media screen and (max-width: 575px) {
+  .contact-card .contact-details.contact-details-flex {
+    display: block;
+  }
+}
+.contact-card .contact-details.contact-details-flex > span {
+  display: block;
+}
+.contact-card .contact-details.contact-details-flex > span:first-child {
+  white-space: nowrap;
+}
+.contact-card .font-b {
+  font-weight: 500;
+}
+.contact-card .text-underline {
+  text-decoration: underline;
+}
+.contact-card .text-underline a {
+  color: #333;
+}
+.contact-card .mailto-text {
+  color: #333;
+  text-decoration: underline;
+}
+.contact-card .mailto-text:hover {
+  color: #BE0E31;
+}

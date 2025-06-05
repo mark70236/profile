@@ -1,0 +1,247 @@
+@charset "utf-8";
+.banner-sec.gourmet-diary-banner {
+  background-image: url("../images/_page/gourmet-diary/gourmet-diary-kv.jpg");
+  min-height: auto;
+}
+.banner-sec.gourmet-diary-banner .banner-container {
+  width: 100%;
+}
+.diary-tab-section {
+  background-color: #FDF2F4;
+  padding: 15px;
+  box-shadow: 0 2px 8px 0 rgba(104, 0, 21, 0.15);
+}
+.diary-tab-section .nav-pills {
+  justify-content: center;
+}
+.diary-tab-section .nav-link {
+  color: #333;
+  font-size: 16px;
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .diary-tab-section .nav-link {
+    font-size: 14px;
+  }
+}
+.diary-tab-section .nav-link.active {
+  background-color: #FCE5EA;
+  color: #BE0E31;
+}
+.diary-tab-section .nav-link.active .all-diary-icn {
+  background-image: url(../images/_page/gourmet-diary/all-diary-red.svg);
+}
+.diary-tab-section .nav-link.active .home-cook-icn {
+  background-image: url(../images/_page/gourmet-diary/home-cook-red.svg);
+}
+.diary-tab-section .nav-link.active .delicious-food-icn {
+  background-image: url(../images/_page/gourmet-diary/delicious-food-red.svg);
+}
+.diary-tab-section .nav-link.active .restaurant-recommend-icn {
+  background-image: url(../images/_page/gourmet-diary/restaurant-recommend-red.svg);
+}
+@media screen and (max-width: 575px) {
+  .diary-tab-section .container {
+    padding: 0px;
+  }
+  .diary-tab-section .nav-link {
+    padding: 15px;
+  }
+}
+.diary-tab-section .diary-icn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.diary-tab-section .all-diary-icn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-image: url(../images/_page/gourmet-diary/all-diary.svg);
+}
+.diary-tab-section .home-cook-icn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-image: url(../images/_page/gourmet-diary/home-cook.svg);
+}
+.diary-tab-section .delicious-food-icn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-image: url(../images/_page/gourmet-diary/delicious-food.svg);
+}
+.diary-tab-section .restaurant-recommend-icn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-image: url(../images/_page/gourmet-diary/restaurant-recommend.svg);
+}
+.diary-tab-section.fixed {
+  z-index: 11;
+  position: fixed;
+  top: 140px;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 575px) {
+  .diary-tab-section.fixed {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .diary-tab-section.fixed {
+    top: 120px;
+  }
+}
+.diary-tab-section.fixed .all-diary-icn,
+.diary-tab-section.fixed .home-cook-icn,
+.diary-tab-section.fixed .delicious-food-icn,
+.diary-tab-section.fixed .restaurant-recommend-icn {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  width: 25px;
+  height: 25px;
+}
+.diary-tab-section.fixed .nav-link {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 1199px) {
+  .diary-tab-section.fixed .nav-link {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .diary-tab-section.fixed .nav-link {
+    padding: 10px 15px;
+  }
+}
+.gourmet-diary-section {
+  background-color: #F8F8F8;
+}
+.diary-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+  margin-bottom: 30px;
+}
+.diary-card .diary-image img {
+  border-radius: 10px 10px 0px 0px;
+}
+.diary-card .diary-content {
+  padding: 20px;
+}
+.diary-card .diary-content .dc-row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.diary-card .diary-content .dc-row1 .dc-tag {
+  color: #E30434;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1199px) {
+  .diary-card .diary-content .dc-row1 .dc-tag {
+    font-size: 12px;
+  }
+}
+.diary-card .diary-content .dc-title {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.diary-card .diary-content .dc-title a {
+  color: #717171;
+  font-weight: bold;
+}
+@media screen and (max-width: 1199px) {
+  .diary-card .diary-content .dc-title {
+    font-size: 16px;
+  }
+}
+.diary-card .diary-content .dc-desc {
+  color: #717171;
+  font-size: 16px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  white-space: normal;
+  -webkit-line-clamp: 4;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 1199px) {
+  .diary-card .diary-content .dc-desc {
+    font-size: 14px;
+  }
+}
+.diary-card .diary-content .dc-date {
+  font-size: 14px;
+  font-weight: bold;
+  color: #717171;
+}
+@media screen and (max-width: 1199px) {
+  .diary-card .diary-content .dc-date {
+    font-size: 12px;
+  }
+}
+.diary-bookmark {
+  background-image: url(../images/_page/bookmark.svg);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  display: block;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.diary-bookmark:hover {
+  opacity: 1;
+}
+.diary-bookmark.active {
+  background-image: url(../images/_page/bookmark-red.svg);
+}
+.wp-pagination {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-bottom: 0px;
+}
+.wp-pagination .page-item .page-link {
+  padding: 7px 15px 9px 15px;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 0px;
+  margin-right: 3px;
+}
+.wp-pagination .page-item.active .page-link {
+  background-color: #333;
+  color: #fff;
+}
+.wp-pagination .page-item-more {
+  padding: .5rem .75rem;
+}

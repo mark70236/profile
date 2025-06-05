@@ -1,0 +1,342 @@
+@charset "utf-8";
+.banner-sec.login-banner {
+  background-image: url('../images/_page/member/login-kv.jpg');
+}
+.banner-sec.register-banner {
+  background-image: url('../images/_page/member/register-kv.jpg');
+}
+.banner-sec.forget-password-banner {
+  background-image: url('../images/_page/member/forget-password-kv.jpg');
+}
+.member-account-section {
+  background-color: #f8f8f8 ;
+}
+.member-account-section .mc-100 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.member-container-center {
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 740px;
+  background-color: #fff;
+  padding: 70px 90px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+@media screen and (max-width: 575px) {
+  .member-container-center {
+    padding: 50px 30px ;
+  }
+}
+.member-container-center p {
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .member-container-center p {
+    font-size: 14px;
+  }
+}
+.member-register-sec {
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .member-register-sec .wp-form-label {
+    padding: 5px;
+  }
+}
+.member-register-sec .wp-tnc-check .btn {
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: initial;
+  color: #1a61ca;
+}
+.member-register-sec .wp-tnc-check .btn:hover {
+  opacity: 0.9;
+}
+.wp-form .form-group {
+  position: relative;
+}
+.wp-form .form-control {
+  border: 1px solid #e1e1e1;
+  height: 50px;
+  width: 100%;
+}
+@media screen and (max-width: 575px) {
+  .wp-form .form-control {
+    height: 40px;
+  }
+}
+.wp-form .form-control::placeholder {
+  color: #ccc;
+  font-size: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .wp-form .form-control::placeholder {
+    font-size: 14px;
+  }
+}
+.wp-form .form-password input {
+  padding-right: 50px;
+}
+.password-show {
+  background-image: url('../images/_page/member/eye-open.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  display: block;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+  .password-show {
+    top: 8px;
+  }
+}
+.password-show:hover {
+  background-image: url('../images/_page/member/eye-open-red.svg');
+}
+.password-hide {
+  display: none;
+  background-image: url('../images/_page/member/eye-close.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+  .password-hide {
+    top: 8px;
+  }
+}
+.password-hide:hover {
+  background-image: url('../images/_page/member/eye-close-red.svg');
+}
+.date {
+  position: relative;
+}
+.label-form .date-icn {
+  z-index: 3;
+  background-image: url('../images/_page/member/calendar-icn.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+  .label-form .date-icn {
+    top: 8px;
+  }
+}
+.label-form .date-icn:hover {
+  background-image: url('../images/_page/member/calendar-icn-red.svg');
+}
+.label-form .password-hide,
+.label-form .password-show {
+  right: 30px;
+}
+.form-btn {
+  font-size: 16px;
+  height: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .form-btn {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .form-btn {
+    height: 40px;
+  }
+}
+.member-link-sec {
+  text-align: center;
+  padding-bottom: 120px;
+}
+.member-link-sec .member-link-btn {
+  position: relative;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.member-link-sec .member-link-btn:after {
+  width: 1px;
+  height: 25px;
+  content: ' ';
+  position: relative;
+  background-color: #cacaca ;
+  left: 25px;
+  top: 2px;
+}
+.member-link-sec .member-link-btn:last-child:after {
+  display: none;
+}
+.member-link-sec .member-link-btn:hover .member-link-text a {
+  color: #BE0E31;
+}
+.member-link-sec .member-link-btn:hover .signup-icon {
+  background-image: url('../images/_page/member/sign-up-red.svg');
+}
+.member-link-sec .member-link-btn:hover .forget-icon {
+  background-image: url('../images/_page/member/forget-password-red.svg');
+}
+.member-link-sec .member-link-btn:hover .login-icon {
+  background-image: url('../images/_page/member/login-icn-red.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.member-link-sec .member-link-btn .member-link-text {
+  display: block;
+  padding-left: 5px;
+}
+.member-link-sec .member-link-btn .member-link-text a {
+  font-size: 16px;
+  color: #333;
+}
+@media screen and (max-width: 1199px) {
+  .member-link-sec .member-link-btn .member-link-text a {
+    font-size: 14px;
+  }
+}
+.member-link-sec .member-link-btn .link-icon {
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.member-link-sec .member-link-btn .signup-icon {
+  background-image: url('../images/_page/member/sign-up.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.member-link-sec .member-link-btn .forget-icon {
+  background-image: url('../images/_page/member/forget-password.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.member-link-sec .member-link-btn .login-icon {
+  background-image: url('../images/_page/member/login-icn.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.form-date .input-group input {
+  border-radius: .25rem !important;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+#privacyPolicy .modal-dialog,
+#memberServiceTerms .modal-dialog {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#privacyPolicy .modal-dialog .wp-modal-content,
+#memberServiceTerms .modal-dialog .wp-modal-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+#privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body,
+#memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body {
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content,
+#memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content {
+  text-align: left;
+  color: #666;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  #privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content,
+  #memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content {
+    font-size: 16px;
+  }
+}
+#privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content a,
+#memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content a {
+  color: #666;
+}
+#privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content a:hover,
+#memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content a:hover {
+  color: #333;
+}
+#privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol,
+#memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol {
+  margin-bottom: 0px;
+}
+#privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li,
+#memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li {
+  padding-top: 25px;
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+@media screen and (max-width: 1199px) {
+  #privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li,
+  #memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li {
+    font-size: 18px;
+  }
+}
+#privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li span,
+#memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li span {
+  font-size: 18px;
+  margin-top: 5px;
+  display: block;
+  color: #666;
+  font-weight: normal;
+}
+@media screen and (max-width: 1199px) {
+  #privacyPolicy .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li span,
+  #memberServiceTerms .modal-dialog .wp-modal-content .wp-modal-body .terms-content ol li span {
+    font-size: 16px;
+  }
+}

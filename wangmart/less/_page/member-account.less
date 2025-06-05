@@ -1,0 +1,321 @@
+.banner-sec.login-banner{
+    background-image: url('../images/_page/member/login-kv.jpg');
+}
+
+.banner-sec.register-banner{
+    background-image: url('../images/_page/member/register-kv.jpg');
+}
+
+.banner-sec.forget-password-banner{
+    background-image: url('../images/_page/member/forget-password-kv.jpg');
+}
+
+
+.member-account-section{
+    background-color: #f8f8f8 ;
+
+    .mc-100{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.member-container-center{
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 740px;
+    background-color: #fff;
+    padding: 70px 90px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+
+    @media screen and (max-width: 575px){
+        padding: 50px 30px ;
+    }
+
+    p{
+        .font-16();
+        line-height: 28px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+.member-register-sec{
+    padding-bottom:100px;
+    .wp-form-label {
+        
+        @media screen and (min-width:768px){
+            padding: 5px;
+        }
+    }
+    .wp-tnc-check {
+        .btn {
+            padding: 0;
+            font-size: 16px;
+            line-height: 1;
+            vertical-align: initial;
+            color: #1a61ca;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+.wp-form{
+    .form-group{
+        position: relative;
+    }
+
+    .form-control{
+        border: 1px solid #e1e1e1;
+        height: 50px;
+        width: 100%;
+
+        @media screen and (max-width:575px){
+            height: 40px;
+        }
+
+        &::placeholder{
+            color: #ccc;
+            .font-16();
+        }
+        
+    }
+
+    .form-password{
+        input{
+            padding-right: 50px;
+        }
+    }
+
+}
+
+.password-show{
+    background-image: url('../images/_page/member/eye-open.svg');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    display: block;
+    top: 13px;
+    right: 15px;
+    cursor: pointer;
+    @media screen and (max-width:575px){
+        top: 8px;
+    }
+
+    &:hover{
+        background-image: url('../images/_page/member/eye-open-red.svg');
+    }
+}
+
+.password-hide{
+    display: none;
+    background-image: url('../images/_page/member/eye-close.svg');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    cursor: pointer;
+
+    @media screen and (max-width:575px){
+        top: 8px;
+    }
+    &:hover{
+        background-image: url('../images/_page/member/eye-close-red.svg');
+    }
+}
+
+.date{
+    position: relative;
+}
+
+.label-form{
+    .date-icn{
+        z-index: 3;
+        background-image: url('../images/_page/member/calendar-icn.svg');
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        cursor: pointer;
+    
+        @media screen and (max-width:575px){
+            top: 8px;
+        }
+        &:hover{
+            background-image: url('../images/_page/member/calendar-icn-red.svg');
+        }
+    }
+
+    .password-hide,.password-show{
+        right: 30px;
+    }
+}
+
+.form-btn{
+    .font-16();
+    height: 50px;
+    @media screen and (max-width:575px){
+        height: 40px;
+    }
+}
+
+.member-link-sec{
+    text-align: center;
+    padding-bottom: 120px;
+    .member-link-btn{
+        position: relative;
+        display: inline-flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        &:after{
+            width: 1px;
+            height: 25px;
+            content: ' ';
+            position: relative;
+            background-color: #cacaca ;
+            left: 25px;
+            top: 2px;
+        }
+    
+        &:last-child:after{
+            display: none;
+        }
+    
+        &:hover{
+            .member-link-text{
+                a{
+                    color: #BE0E31;
+                }
+            }
+    
+            .signup-icon{
+                background-image: url('../images/_page/member/sign-up-red.svg');
+            }
+    
+            .forget-icon{
+                background-image: url('../images/_page/member/forget-password-red.svg');
+            }
+
+            .login-icon{
+                background-image: url('../images/_page/member/login-icn-red.svg');
+                .link-icon();
+            }
+        }
+    
+        .member-link-text{
+            display: block;
+            padding-left: 5px;
+            a{
+                .font-16();
+                color: #333;
+            }
+    
+        }
+    
+        .link-icon{
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            display: block;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+        }
+        .signup-icon{
+            background-image: url('../images/_page/member/sign-up.svg');
+            .link-icon();
+        }
+    
+        .forget-icon{
+            background-image: url('../images/_page/member/forget-password.svg');
+            .link-icon();
+        }
+
+        .login-icon{
+            background-image: url('../images/_page/member/login-icn.svg');
+            .link-icon();
+        }
+    
+    }
+}
+
+.form-date{
+    .input-group{
+        input{
+            border-radius: .25rem !important;
+        }
+    }
+}
+
+
+.pt-60{
+    padding-top: 60px;
+}
+
+#privacyPolicy,
+#memberServiceTerms {
+    .modal-dialog {
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        .wp-modal-content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 50px;
+            .wp-modal-body {
+                max-height: 400px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                .terms-content{
+                    text-align: left;
+                    color: #666;
+                    line-height: 2;
+                    letter-spacing: 0.5px;
+                    .font-18();
+            
+                    a{
+                        color: #666;
+            
+                        &:hover{
+                            color: #333;
+                        }
+                    }
+                    
+                    ol{
+                        margin-bottom: 0px;
+            
+                        li{
+                            padding-top: 25px;
+                            font-weight: bold;
+                            color: #333;
+                            .font-20();
+            
+                            span{
+                                .font-18();
+                                margin-top: 5px;
+                                display: block;
+                                color: #666;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+}

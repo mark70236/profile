@@ -1,0 +1,101 @@
+@charset "utf-8";
+.banner-sec.shopping-notes-banner {
+  background-image: url("../images/_page/shopping-notes/shopping-notes-kv.jpg");
+  min-height: auto;
+}
+.banner-sec.shopping-notes-banner .banner-container {
+  width: 100%;
+}
+.shopping-notes-breadcrumb {
+  background-color: #f7f7f7;
+  padding-bottom: 16px;
+}
+.shopping-notes-section {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+}
+.shopping-notes-section .anchor-btn-col {
+  padding-bottom: 70px;
+}
+.shopping-notes-section .anchor-btn-col .anchor-btn {
+  color: #666;
+  font-size: 24px;
+  padding: 10px 40px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-right: 20px;
+  border: 1px solid transparent;
+}
+@media screen and (max-width: 1199px) {
+  .shopping-notes-section .anchor-btn-col .anchor-btn {
+    font-size: 22px;
+  }
+}
+.shopping-notes-section .anchor-btn-col .anchor-btn:hover {
+  border: 1px solid #be0e31;
+  color: #be0e31;
+}
+@media screen and (max-width: 575px) {
+  .shopping-notes-section .anchor-btn-col .anchor-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 575px) and screen and (max-width: 1199px) {
+  .shopping-notes-section .anchor-btn-col .anchor-btn {
+    font-size: 16px;
+  }
+}
+.shopping-notes-section .sn-title {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+.shopping-notes-section .sn-title::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 6px;
+  height: 32px;
+  background-color: #df032e;
+}
+.shopping-notes-section .sn-content {
+  padding-bottom: 25px;
+}
+.shopping-notes-section .sub-title {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .shopping-notes-section .sub-title {
+    font-size: 18px;
+  }
+}
+.shopping-notes-section .sn-desc {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+@media screen and (max-width: 1199px) {
+  .shopping-notes-section .sn-desc {
+    font-size: 16px;
+  }
+}
+.shopping-notes-section .sn-desc a {
+  color: #666;
+}
+.shopping-notes-section .sn-desc a:hover {
+  color: #333;
+}
+.sn-anchor {
+  display: block;
+  position: relative;
+  top: -170px;
+  visibility: hidden;
+}

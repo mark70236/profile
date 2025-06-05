@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <circle id="bx3vxf1fea" cx="30" cy="30" r="30"/>
+        <path id="mmxhrdn92c" d="M11.866.316c.423-.421 1.108-.421 1.531 0 .385.382.42.98.105 1.403l-.105.12L2.614 12.571l10.783 10.732c.385.383.42.982.105 1.403l-.105.121c-.384.383-.986.418-1.41.105l-.121-.105L.317 13.333c-.384-.382-.42-.98-.105-1.403l.105-.12L11.866.315z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-401.000000, -811.000000) translate(401.000000, 811.000000)">
+                <mask id="6tr2fl4d8b" fill="#fff">
+                    <use xlink:href="#bx3vxf1fea"/>
+                </mask>
+                <g fill="#FFF" mask="url(#6tr2fl4d8b)">
+                    <path d="M0 0H60V60H0z"/>
+                </g>
+                <g mask="url(#6tr2fl4d8b)">
+                    <g transform="translate(14.000000, 14.000000) translate(8.000000, 3.428571)">
+                        <mask id="vlcerzc06d" fill="#fff">
+                            <use xlink:href="#mmxhrdn92c"/>
+                        </mask>
+                        <use fill="#000" fill-rule="nonzero" xlink:href="#mmxhrdn92c"/>
+                        <g fill="#DF032E" mask="url(#vlcerzc06d)">
+                            <path d="M0 0H32V32H0z" transform="translate(-9.142857, -3.428571)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

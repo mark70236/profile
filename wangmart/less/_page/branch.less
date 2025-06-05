@@ -1,0 +1,79 @@
+.banner-sec.branch-banner{
+    background-image: url("../images/_page/branch/branch-kv.jpg");
+    min-height: 500px;
+
+    .banner-container{
+        width: 70%;
+        margin: 0 auto;
+
+        .banner-title{
+            text-align: center;
+        }
+        
+        .banner-desc{
+            text-align: center;
+            .font-24();
+        }
+    }
+    
+}
+
+.branch-breadcrumb{
+    background-color: #f7f7f7;
+    padding-bottom: 16px;
+}
+
+.branch-sec{
+    background-color: #f7f7f7;
+}
+
+.branch-container{
+    padding-top: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    display: flex;
+
+    @media screen and (max-width:575px){
+        padding-top: 0px;
+    }
+
+    a{
+        position: relative;
+        margin: 25px;
+        width: calc(~"(100% - 300px) / 6");
+
+        @media screen and (max-width:992px){
+            width: calc(~"(100% - 200px) / 4");
+        }
+
+        @media screen and (max-width:575px){
+            margin: 25px;
+            width: calc(~"(100% - 150px) / 3");
+        }
+
+        &:hover img{
+            .trs(0.3s);
+            transform: scale(1.1);
+        }
+
+        &:after{
+            width: 0;
+            content: '';
+            height: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+        }
+
+        &:hover::after{
+            width: 110%;
+            height: 110%;
+            border-radius: 50%;
+            
+        }
+    }
+}

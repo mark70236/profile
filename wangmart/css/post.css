@@ -1,0 +1,366 @@
+@charset "utf-8";
+.post-breadcrumb,
+.post-title,
+.post-categories {
+  padding-left: 80px;
+}
+@media screen and (max-width: 767px) {
+  .post-breadcrumb,
+  .post-title,
+  .post-categories {
+    padding-left: 0px;
+  }
+}
+.post-bg {
+  background-color: #F8F8F8;
+}
+.post-sec {
+  display: flex;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .post-sec {
+    display: block;
+  }
+}
+.post-container {
+  display: flex;
+}
+.post-action {
+  padding-top: 20px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 767px) {
+  .post-action {
+    display: none;
+  }
+}
+.post-action span {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  padding-top: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .post-action span {
+    font-size: 14px;
+  }
+}
+.post-action .collect-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+}
+.post-action .collect-btn .collect-icn {
+  background-image: url('../images/_page/bookmark-dark.svg');
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 0px;
+  display: block;
+  background-repeat: no-repeat;
+}
+.post-action .collect-btn:hover .collect-icn {
+  background-image: url('../images/_page/bookmark-red.svg');
+  opacity: 0.8;
+}
+.post-action .collect-btn:hover span {
+  color: #be0e31;
+}
+.post-action .collect-btn.active .collect-icn {
+  background-image: url('../images/_page/bookmark-red.svg');
+}
+.post-action .collect-btn.active span {
+  color: #be0e31;
+}
+.post-action .share-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.post-action .share-btn.active .share-icn {
+  background-image: url('../images/_page/icon-share-darkred.svg');
+}
+.post-action .share-btn.active .btn-title {
+  color: #be0e31;
+}
+.post-action .share-btn .share-icn {
+  background-image: url('../images/_page/icon-share-dark.svg');
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 0px;
+  display: block;
+  background-repeat: no-repeat;
+}
+.post-action .share-btn .share-icn.active {
+  background-image: url('../images/_page/icon-share-darkred.svg');
+}
+.post-action .share-btn:hover .share-icn {
+  background-image: url('../images/_page/icon-share-darkred.svg');
+  opacity: 0.8;
+}
+.post-action .share-btn:hover .btn-title {
+  color: #be0e31;
+}
+@media screen and (max-width: 767px) {
+  .post-mobile-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.share-container-mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .share-container-mobile {
+    display: flex;
+  }
+  .share-container-mobile .collect-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+  }
+  .share-container-mobile .collect-btn .collect-icn {
+    background-image: url('../images/_page/bookmark-dark.svg');
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+  .share-container-mobile .collect-btn:hover .collect-icn {
+    background-image: url('../images/_page/bookmark-red.svg');
+    opacity: 0.8;
+  }
+  .share-container-mobile .collect-btn:hover span {
+    color: #be0e31;
+  }
+  .share-container-mobile .collect-btn.active .collect-icn {
+    background-image: url('../images/_page/bookmark-red.svg');
+  }
+  .share-container-mobile .collect-btn.active span {
+    color: #be0e31;
+  }
+  .share-container-mobile .collect-btn .btn-title {
+    font-size: 16px;
+    display: block;
+    padding-left: 5px;
+  }
+  .share-container-mobile .share-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .share-container-mobile .share-btn .btn-title {
+    font-size: 16px;
+    display: block;
+    padding-left: 5px;
+  }
+  .share-container-mobile .share-btn.active .share-icn {
+    background-image: url('../images/_page/icon-share-darkred.svg');
+  }
+  .share-container-mobile .share-btn.active .btn-title {
+    color: #be0e31;
+  }
+  .share-container-mobile .share-btn .share-icn {
+    background-image: url('../images/_page/icon-share-dark.svg');
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+  .share-container-mobile .share-btn .share-icn.active {
+    background-image: url('../images/_page/icon-share-darkred.svg');
+  }
+  .share-container-mobile .share-btn:hover .share-icn {
+    background-image: url('../images/_page/icon-share-darkred.svg');
+    opacity: 0.8;
+  }
+  .share-container-mobile .share-btn:hover .btn-title {
+    color: #be0e31;
+  }
+}
+@media screen and (max-width: 767px) and screen and (max-width: 1199px) {
+  .share-container-mobile .collect-btn .btn-title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) and screen and (max-width: 1199px) {
+  .share-container-mobile .share-btn .btn-title {
+    font-size: 14px;
+  }
+}
+.post-ad-sec {
+  width: 30%;
+  position: relative;
+  padding: 40px;
+}
+@media screen and (max-width: 767px) {
+  .post-ad-sec {
+    width: 100%;
+    padding: 0px;
+  }
+}
+.post-col {
+  width: 70%;
+}
+@media screen and (max-width: 767px) {
+  .post-col {
+    width: 100%;
+  }
+}
+.post-col img {
+  border-radius: 5px;
+}
+.post-col .post-content {
+  padding-top: 15px;
+}
+.post-col .post-content p {
+  padding-top: 30px;
+  color: #666;
+  line-height: 28px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  .post-col .post-content p {
+    font-size: 16px;
+  }
+}
+.post-col .post-categories {
+  color: #DF032E;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .post-col .post-categories {
+    font-size: 16px;
+  }
+}
+.share-container {
+  display: none;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 90px;
+  left: -10px;
+  z-index: 2;
+}
+.share-container.active {
+  display: block;
+}
+.share-container:after {
+  content: "";
+  border-style: solid;
+  border-width: 0px 12px 15px;
+  border-color: transparent transparent #ffffff;
+  top: -15px;
+  left: 10%;
+  margin-left: -6px;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  z-index: 2;
+}
+.share-container .social-share-btn {
+  display: flex;
+  padding: 10px 15px;
+}
+.share-container .social-share-btn img {
+  width: 22px;
+  margin-right: 10px;
+}
+.share-container .social-share-btn .btn-text {
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+  padding-top: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .share-container .social-share-btn .btn-text {
+    font-size: 14px;
+  }
+}
+.share-container .social-share-btn:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(223, 3, 46, 0.05);
+}
+.share-mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .share-mobile {
+    display: block;
+    width: 100%;
+    z-index: 20;
+    background-color: #fff;
+  }
+  .share-mobile .share-mobile-container {
+    width: 100%;
+    top: auto;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 20;
+  }
+  .share-mobile .share-mobile-container:after {
+    display: none;
+  }
+}
+.post-navigate {
+  margin-top: 60px;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.post-navigate .post-prev {
+  width: 50%;
+  border-right: 1px solid #979797;
+}
+.post-navigate .post-prev a {
+  color: #333;
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  .post-navigate .post-prev a {
+    font-size: 16px;
+  }
+}
+.post-navigate .post-next {
+  text-align: right;
+  width: 50%;
+}
+.post-navigate .post-next a {
+  color: #333;
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  .post-navigate .post-next a {
+    font-size: 16px;
+  }
+}

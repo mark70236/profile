@@ -1,0 +1,80 @@
+@charset "utf-8";
+.banner-sec.branch-banner {
+  background-image: url("../images/_page/branch/branch-kv.jpg");
+  min-height: 500px;
+}
+.banner-sec.branch-banner .banner-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.banner-sec.branch-banner .banner-container .banner-title {
+  text-align: center;
+}
+.banner-sec.branch-banner .banner-container .banner-desc {
+  text-align: center;
+  font-size: 24px;
+}
+@media screen and (max-width: 1199px) {
+  .banner-sec.branch-banner .banner-container .banner-desc {
+    font-size: 22px;
+  }
+}
+.branch-breadcrumb {
+  background-color: #f7f7f7;
+  padding-bottom: 16px;
+}
+.branch-sec {
+  background-color: #f7f7f7;
+}
+.branch-container {
+  padding-top: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  display: flex;
+}
+@media screen and (max-width: 575px) {
+  .branch-container {
+    padding-top: 0px;
+  }
+}
+.branch-container a {
+  position: relative;
+  margin: 25px;
+  width: calc((100% - 300px) / 6);
+}
+@media screen and (max-width: 992px) {
+  .branch-container a {
+    width: calc((100% - 200px) / 4);
+  }
+}
+@media screen and (max-width: 575px) {
+  .branch-container a {
+    margin: 25px;
+    width: calc((100% - 150px) / 3);
+  }
+}
+.branch-container a:hover img {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.branch-container a:after {
+  width: 0;
+  content: '';
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.branch-container a:hover::after {
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+}

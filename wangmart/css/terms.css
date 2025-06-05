@@ -1,0 +1,73 @@
+@charset "utf-8";
+.banner-sec.terms-banner {
+  background-image: url("../images/_page/terms/terms-kv.jpg");
+  min-height: auto;
+}
+.banner-sec.terms-banner .banner-container {
+  width: 100%;
+}
+.terms-breadcrumb {
+  background-color: #f7f7f7;
+  padding-bottom: 16px;
+}
+.terms-sec {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+}
+.terms-sec .terms-title {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.terms-sec .terms-title::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 6px;
+  height: 32px;
+  background-color: #df032e;
+}
+.terms-sec .terms-content {
+  color: #666;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  .terms-sec .terms-content {
+    font-size: 16px;
+  }
+}
+.terms-sec .terms-content a {
+  color: #666;
+}
+.terms-sec .terms-content a:hover {
+  color: #333;
+}
+.terms-sec .terms-content ol {
+  margin-bottom: 0px;
+}
+.terms-sec .terms-content ol li {
+  padding-top: 25px;
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .terms-sec .terms-content ol li {
+    font-size: 18px;
+  }
+}
+.terms-sec .terms-content ol li span {
+  font-size: 18px;
+  margin-top: 5px;
+  display: block;
+  color: #666;
+  font-weight: normal;
+}
+@media screen and (max-width: 1199px) {
+  .terms-sec .terms-content ol li span {
+    font-size: 16px;
+  }
+}

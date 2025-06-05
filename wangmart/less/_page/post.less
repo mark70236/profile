@@ -1,0 +1,398 @@
+.post-breadcrumb,.post-title,.post-categories{
+    padding-left: 80px;
+    @media screen and (max-width:767px){
+        padding-left: 0px;
+    }
+}
+
+.post-bg{
+    background-color: #F8F8F8;
+}
+
+.post-sec {
+    display: flex;
+    padding-bottom: 60px;
+    @media screen and (max-width:767px) {
+        display: block;
+     }
+}
+
+.post-container{
+    display: flex;
+}
+
+.post-action {
+    padding-top: 20px;
+    padding-right: 40px;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    span {
+        .font-16();
+        color: #333;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .collect-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        position: relative;
+
+
+        .collect-icn {
+            background-image: url('../images/_page/bookmark-dark.svg');
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 0px;
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+        &:hover {
+            .collect-icn {
+                background-image: url('../images/_page/bookmark-red.svg');
+                opacity: 0.8;
+            }
+
+            span {
+                color: #be0e31;
+                ;
+            }
+
+        }
+
+        &.active {
+            .collect-icn {
+                background-image: url('../images/_page/bookmark-red.svg');
+            }
+
+            span {
+                color: #be0e31;
+                ;
+            }
+        }
+
+    }
+
+    .share-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40px;
+        cursor: pointer;
+        position: relative;
+
+        &.active {
+            .share-icn {
+                background-image: url('../images/_page/icon-share-darkred.svg');
+            }
+
+            .btn-title {
+                color: #be0e31;
+            }
+        }
+
+        .share-icn {
+            background-image: url('../images/_page/icon-share-dark.svg');
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 0px;
+            display: block;
+            background-repeat: no-repeat;
+
+            &.active {
+                background-image: url('../images/_page/icon-share-darkred.svg');
+            }
+        }
+
+        &:hover {
+            .share-icn {
+                background-image: url('../images/_page/icon-share-darkred.svg');
+                opacity: 0.8;
+            }
+
+            .btn-title {
+                color: #be0e31;
+                ;
+            }
+
+        }
+    }
+}
+
+.post-mobile-row {
+    @media screen and (max-width:767px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.share-container-mobile {
+    display: none;
+
+    @media screen and (max-width:767px) {
+
+        display: flex;
+
+        .collect-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            padding-right: 20px;
+
+            .collect-icn {
+                background-image: url('../images/_page/bookmark-dark.svg');
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 0px;
+                display: block;
+                background-repeat: no-repeat;
+            }
+
+            &:hover {
+                .collect-icn {
+                    background-image: url('../images/_page/bookmark-red.svg');
+                    opacity: 0.8;
+                }
+
+                span {
+                    color: #be0e31;
+                    ;
+                }
+
+            }
+
+            &.active {
+                .collect-icn {
+                    background-image: url('../images/_page/bookmark-red.svg');
+                }
+
+                span {
+                    color: #be0e31;
+                    ;
+                }
+            }
+
+            .btn-title {
+                .font-16();
+                display: block;
+                padding-left: 5px;
+            }
+        
+        }
+
+        .share-btn {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+
+            .btn-title {
+                .font-16();
+                display: block;
+                padding-left: 5px;
+            }
+
+            &.active {
+                .share-icn {
+                    background-image: url('../images/_page/icon-share-darkred.svg');
+                }
+
+                .btn-title {
+                    color: #be0e31;
+                }
+            }
+
+            .share-icn {
+                background-image: url('../images/_page/icon-share-dark.svg');
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 0px;
+                display: block;
+                background-repeat: no-repeat;
+
+                &.active {
+                    background-image: url('../images/_page/icon-share-darkred.svg');
+                }
+            }
+
+            &:hover {
+                .share-icn {
+                    background-image: url('../images/_page/icon-share-darkred.svg');
+                    opacity: 0.8;
+                }
+
+                .btn-title {
+                    color: #be0e31;
+                    ;
+                }
+
+            }
+        }
+    }
+}
+
+.post-ad-sec{
+    width: 30%;
+    position: relative;
+    padding: 40px;
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.post-col {
+    width: 70%;
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+    }
+
+    img {
+        border-radius: 5px;
+    }
+
+    .post-content {
+        padding-top: 15px;
+
+        p {
+            padding-top: 30px;
+            color: #666;
+            line-height: 28px;
+            .font-18();
+        }
+    }
+
+    .post-categories {
+        color: #DF032E;
+        .font-18();
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+}
+
+.share-container {
+    display: none;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 90px;
+    left: -10px;
+    z-index: 2;
+
+    &.active {
+        display: block;
+    }
+
+    &:after {
+        content: "";
+        border-style: solid;
+        border-width: 0px 12px 15px;
+        border-color: transparent transparent rgb(255, 255, 255);
+        top: -15px;
+        left: 10%;
+        margin-left: -6px;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        z-index: 2;
+        // filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+    }
+
+    .social-share-btn {
+        display: flex;
+        padding: 10px 15px;
+
+        img {
+            width: 22px;
+            margin-right: 10px;
+        }
+
+        .btn-text {
+            .font-16();
+            color: #666;
+            font-weight: bold;
+            padding-top: 0px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgba(223, 3, 46, 0.05);
+            ;
+        }
+    }
+}
+
+.share-mobile {
+    display: none;
+
+    @media screen and (max-width:767px) {
+        display: block;
+        width: 100%;
+        z-index: 20;
+        background-color: #fff;
+
+        .share-mobile-container {
+            width: 100%;
+            top: auto;
+            bottom: 0px;
+            left: 0px;
+            position: fixed;
+            z-index: 20;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.post-navigate{
+    margin-top: 60px;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    margin-bottom: 30px;
+
+    .post-prev{
+        width: 50%;
+        border-right: 1px solid #979797;
+        a{
+            color: #333;
+            .font-18();
+        }
+    }
+    .post-next{
+        text-align: right;
+        width: 50%;
+        a{
+            color: #333;
+            .font-18();
+        }
+    }
+}
