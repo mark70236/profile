@@ -1,0 +1,196 @@
+.wk-content {
+    margin-top: 87px;
+    background-color: #fef8f3;
+    @media all and (max-width: 480px) {
+        & {
+            margin-top: 70px;
+        }
+    }
+    section.targetList-box {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        padding: 70px 0;
+        background-color: #333;
+        border-bottom: solid 5px #f4b500;
+        @media all and (max-width: 650px) {
+            & {
+                height: auto;
+            }
+        }
+        .title {
+            width: 280px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            color: #fff;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 10px;
+            border-top: solid 1px #fff;
+            @media all and (max-width: 650px) {
+                & {
+                    width: 240px;
+                    font-size: 26px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .security-platform-svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            svg {
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+    .section2 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+        @media all and (max-width: 1200px) {
+            & {
+                padding: 100px 30px;
+            }
+        }
+        @media all and (max-width: 800px) {
+            & {
+                padding: 70px 30px;
+            }
+        }
+        .content-box {
+            overflow: hidden;
+            padding: 30px 0;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #fff;
+            border: solid 1px #2679a4;
+            box-shadow: inset 1px 1px 0px #6eb5cb, inset -1px -1px 0px #6eb5cb;
+            
+            .title {
+                width: 174px;
+                height: 56px;
+                margin-top: 20px;
+                margin-left: 54px;
+                margin-bottom: 37px;
+                background-image: url('../images/judges/bottom-title.png');
+                @media all and (max-width: 1200px) {
+                    & {
+                        margin-top: 30px;
+                        margin-left: 30px;
+                    }
+                }
+                @media all and (max-width: 800px) {
+                    & {
+                        width: 130px;
+                        height: 45px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin: 10px 30px 30px;
+                    }
+                }
+            }
+            .data-table {
+                opacity: 0;
+                visibility: hidden;
+                .trs(0.5s);
+                @media all and (max-width: 650px) {
+                    & {
+                        overflow-x: scroll;
+                    }
+                }
+                .thead {
+                    @media all and (max-width: 650px) {
+                        & {
+                            width: 700px;
+                        }
+                    }
+                    .tr {
+                        display: block;
+                        overflow: hidden;
+                        background-color: #f0f0f0;
+                        span {
+                            width: 16.666%;
+                            float: left;
+                            text-align: center;
+                            padding: 20px 0;
+                            font-size: 20px;
+                            @media all and (max-width: 800px) {
+                                & {
+                                    font-size: 14px;
+                                    padding: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tbody {
+                    height: 304px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    @media all and (max-width: 650px) {
+                        & {
+                            width: 700px;
+                        }
+                    }
+                    .tr {
+                        display: block;
+                        overflow: hidden;
+                        border-bottom: solid 1px #e9e9e9;
+                        @media all and (max-width: 800px) {
+                            & {
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                        span {
+                            width: 16.666%;
+                            float: left;
+                            font-size: 16px;
+                            padding: 20px 0;
+                            text-align: center;
+                            @media all and (max-width: 800px) {
+                                & {
+                                    font-size: 14px;
+                                    padding: 10px 0;
+                                }
+                            }
+                            
+                            a {
+                                color: #2779a4;
+                            }
+                        }
+                        span.btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            span {
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 80px;
+                                height: 35px;
+                                padding: 0;
+                                text-align: center;
+                                background-color: #edb400;
+                                .trs;
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .data-table.active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

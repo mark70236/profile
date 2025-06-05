@@ -1,0 +1,47 @@
+.bg-NO {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.b-NO {
+  border: none !important;
+}
+.o-E {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mk-debug {
+  /* 固態綠色 */
+  /* 固態橘色 */
+  /* 固態藍色 */
+  /* 固態紅色 */
+  /* 點點綠色 */
+  /* 點點橘色 */
+  /* 點點藍色 */
+  /* 點點紅色 */
+}
+.mk-debug * *:hover {
+  outline: 2px solid #89a81e;
+}
+.mk-debug * * *:hover {
+  outline: 2px solid #f34607;
+}
+.mk-debug * * * *:hover {
+  outline: 2px solid #5984c3;
+}
+.mk-debug * * * * *:hover {
+  outline: 2px solid #cd1821;
+}
+.mk-debug * * * * * *:hover {
+  outline: 2px dotted #89a81e;
+}
+.mk-debug * * * * * * *:hover {
+  outline: 2px dotted #f34607;
+}
+.mk-debug * * * * * * * *:hover {
+  outline: 2px dotted #5984c3;
+}
+.mk-debug * * * * * * * * *:hover {
+  outline: 2px dotted #cd1821;
+}

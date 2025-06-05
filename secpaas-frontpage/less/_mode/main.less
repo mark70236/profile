@@ -1,0 +1,188 @@
+header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #000;
+    .header-wrap {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        @media all and (max-width: 1280px) {
+			& { 
+                width: 100%; 
+                padding: 0 30px;
+            }
+        }
+        @media all and (max-width: 480px) {
+			& { 
+                padding: 0 20px;
+            }
+		}
+        .logo-box {
+            float: left;
+            @media all and (max-width: 480px) {
+                & { 
+                    width: 120px;
+                }
+            }
+            a {
+                img {
+                    @media all and (max-width: 480px) {
+                        & { 
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .right-box {
+            float: right;
+            display: flex;
+            align-items: center;
+            >ul {
+                float: left;
+                overflow: hidden;
+                margin-right: 10px;
+                li {
+                    float: left;
+                    padding: 0 20px;
+                    font-size: 16px;
+                    border-right: solid 1px #8d8c8e;
+                    .trs;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                    @media all and (max-width: 480px) {
+                        & { 
+                            padding: 0 10px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                li:last-child {
+                    border-right: none;
+                }
+            }
+            .login-btn {
+                float: left;
+                padding: 5px 40px;
+                font-size: 16px;
+                background-color: #cb0c41;
+                .trs;
+                &:hover {
+                    opacity: 0.9;
+                }
+                @media all and (max-width: 480px) {
+                    & { 
+                        padding: 5px 10px;
+                    }
+                }
+                i {
+                    margin-right: 10px;
+                    @media all and (max-width: 480px) {
+                        & { 
+                            margin-right: 0;
+                        }
+                    }
+                }
+                span {
+                    @media all and (max-width: 480px) {
+                        & { 
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.fixed-line-box {
+    z-index: 10;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    .line {
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100vh;
+        background-color: #DBDBDB;
+    }
+    .line1 {
+        position: relative;
+        left: 250px;
+    }
+    .line2 {
+        left: 550px;
+    }
+    .line3 {
+        left: 1500px;
+    }
+}
+footer {
+    z-index: 11;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    @media all and (max-width: 360px) {
+        & {
+            font-size: 12px;
+        }
+    }
+    .block-box {
+        .block1 {
+            position: absolute;
+            bottom: 150px;
+            left: 258px;
+            width: 5px;
+            height: 5px;
+            background-color: #000;
+            @media all and (max-width: 600px) {
+                & {
+                    left: 58px;
+                }
+            }
+        }
+        .block2 {
+            position: absolute;
+            bottom: 137px;
+            left: 258px;
+            width: 5px;
+            height: 5px;
+            background-color: #000;
+            @media all and (max-width: 600px) {
+                & {
+                    left: 58px;
+                }
+            }
+        }
+        .block3 {
+            position: absolute;
+            bottom: 77px;
+            left: 238px;
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+            @media all and (max-width: 600px) {
+                & {
+                    left: 38px;
+                    bottom: 97px;
+                }
+            }
+        }
+    }
+}
+

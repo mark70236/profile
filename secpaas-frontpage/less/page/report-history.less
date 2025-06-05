@@ -1,0 +1,482 @@
+.wk-content {
+    margin-top: 87px;
+    background-color: #fef8f3;
+    @media all and (max-width: 480px) {
+        & {
+            margin-top: 70px;
+        }
+    }
+    section.targetList-box {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        padding: 70px 0;
+        background-color: #333;
+        border-bottom: solid 5px #f4b500;
+        @media all and (max-width: 650px) {
+            & {
+                height: auto;
+            }
+        }
+        .title {
+            width: 280px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            color: #fff;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 10px;
+            border-top: solid 1px #fff;
+            @media all and (max-width: 650px) {
+                & {
+                    width: 240px;
+                    font-size: 26px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .security-platform-svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            svg {
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+    .section.content-section {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        
+        
+        @media all and (max-width: 1200px) {
+            & {
+                padding: 60px 30px;
+                margin-top: 0;
+            }
+        }
+        .content-top-bg {
+            position: relative;
+            width: 403px;
+            height: 32px;
+            background-image: url('../images/issue-edit/content-top-bg.png');
+            @media all and (max-width: 768px) {
+                & {
+                    display: none;
+                }
+            }
+        }
+        .content-box {
+            width: 1190px;
+            height: auto;
+            padding: 0 1px;
+            margin-top: -2px;
+            background-color: #fff;
+            border: solid 1px #2679a4;
+            box-shadow: inset 1px 1px 0px #6eb5cb, inset -1px -1px 0px #6eb5cb;
+            @media all and (max-width: 1200px) {
+                & {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            .top-box {
+                width: 100%;
+                height: 90px;
+                position: relative;
+                padding: 5px 25px 0 44px;
+                display: flex;
+                justify-content: space-between;
+                @media all and (max-width: 1200px) {
+                    & {
+                        padding: 5px 25px 0 25px;
+                    }
+                }
+                @media all and (max-width: 768px) {
+                    & {
+                        padding: 18px 25px;
+                        height: auto;
+                    }
+                }
+                .title-box {
+                    overflow: hidden;
+                    .icon {
+                        float: left;
+                        width: 41px;
+                        height: 42px;
+                        margin-top: 12px;
+                        margin-right: 10px;
+                        @media all and (max-width: 768px) {
+                            & {
+                                width: 31px;
+                                height: 31px;
+                                margin-top: 9px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    .icon1 {
+                        background-image: url('../images/issue-edit/icon1.png');
+                    }
+                    .icon2 {
+                        background-image: url('../images/issue-edit/icon2.png');
+                    }
+                    .text {
+                        float: left;
+                        .title {
+                            display: block;
+                            font-size: 20px;
+                            color: #4D4D4D;
+                            @media all and (max-width: 768px) {
+                                & {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .subtitle {
+                            display: block;
+                            font-size: 28px;
+                            color: #0079A4;
+                            @media all and (max-width: 768px) {
+                                & {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-box {
+                display: flex;
+                height: auto;
+                padding: 1px;
+                @media all and (max-width: 560px) {
+                    & {
+                        display: block;
+                    }
+                }
+                .left-box {
+                    float: left;
+                    width: 424px;
+                    height: auto;
+                    background-color: #f0f0f0;
+                    border-right: solid 3px #2779a6;
+                    padding: 25px 58px 25px 45px;
+                    border-top: solid 1px #f4f4f4;
+                    @media all and (max-width: 1200px) {
+                        & {
+                            width: 280px;
+                            padding: 25px;
+                        }
+                    }
+                    @media all and (max-width: 768px) {
+                        & {
+                            width: 210px;
+                            padding: 25px 15px;
+                        }
+                    }
+                    @media all and (max-width: 560px) {
+                        & {
+                            width: 100%;
+                            float: none;
+                            border-right: none;
+                        }
+                    }
+                    .title-box {
+                        
+                        margin-bottom: 20px;
+                        >.icon  {
+                            width: 32px;
+                            height: 30px;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            @media all and (max-width: 768px) {
+                                & {
+                                    width: 21px;
+                                    height: 21px;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                        }
+                        .num1 {
+                            background-image: url('../images/issue-edit/num1.png');
+                        }
+                        .title {
+                            vertical-align: middle;
+                            font-size: 24px;
+                            color: #0079A4;
+                            @media all and (max-width: 768px) {
+                                & {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .data-list-box {
+                        ul {
+                            li {
+                                color: #333;
+                                padding: 15px 0;
+                                font-size: 18px;
+                                border-bottom: solid 1px #c3c3c3;
+                                @media all and (max-width: 768px) {
+                                    & {
+                                        font-size: 14px;
+                                    }
+                                }
+                                .data-title {
+                                    margin-right: 15px;
+                                }
+                                a {
+                                    color: #333;
+                                    font-size: 16px;
+                                    padding: 7px 15px;
+                                    background-color: #f5b600;
+                                    &:hover { opacity: 0.9; }
+                                    @media all and (max-width: 768px) {
+                                        & {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-box {
+                    float: left;
+                    width: ~"calc(100% - 424px)";
+                    height: 100%;
+                    background-color: #fff;
+                    border-top: solid 1px #f4f4f4;
+                    @media all and (max-width: 1200px) {
+                        & {
+                            width: ~"calc(100% - 280px)";
+                        }
+                    }
+                    @media all and (max-width: 768px) {
+                        & {
+                            width: ~"calc(100% - 210px)";
+                        }
+                    }
+                    @media all and (max-width: 560px) {
+                        & {
+                            width: 100%;
+                            float: none;
+                        }
+                    }
+                    .title-box {
+                        margin-bottom: 20px;
+                        padding: 25px;
+                        @media all and (max-width: 768px) {
+                            & {
+                                margin-bottom: 0;
+                                padding: 25px 15px;
+                            }
+                        }
+                        >.icon  {
+                            width: 32px;
+                            height: 30px;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            @media all and (max-width: 768px) {
+                                & {
+                                    width: 21px;
+                                    height: 21px;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                        }
+                        .num2 {
+                            background-image: url('../images/issue-edit/num2.png');
+                        }
+                        .title {
+                            vertical-align: middle;
+                            font-size: 24px;
+                            color: #0079A4;
+                            @media all and (max-width: 768px) {
+                                & {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .form-box {
+                        ul {
+                            li {
+                                font-size: 18px;
+                                padding: 15px 25px;
+                                background-color: #f0f0f0;
+                                @media all and (max-width: 768px) {
+                                    & {
+                                        font-size: 14px;
+                                        padding: 15px;
+                                    }
+                                }
+                                .form-title {
+                                    width: 90px;
+                                    margin-right: 20px;
+                                    @media all and (max-width: 768px) {
+                                        & {
+                                            width: 60px;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                                .form-title.vertical-align-top {
+                                    vertical-align: top;
+                                }
+                                .required {
+                                    color: #f3b510;
+                                    margin-left: 5px;
+                                }
+                                .form-col {
+                                    width: ~"calc(100% - 120px)";
+                                    font-size: 16px;
+                                    @media all and (max-width: 768px) {
+                                        & {
+                                            width: ~"calc(100% - 80px)";
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    a {
+                                        color: #2678a6;
+                                        &:hover {
+                                            opacity: 0.9;
+                                        }
+                                    }
+                                }
+                            }
+                            li:nth-child(2n) {
+                                background-color: #fff;
+                            }
+                            li.li-submit {
+                                text-align: center;
+                                .btn-box {
+                                    cursor: pointer;
+                                    display: block;
+                                    position: relative;
+                                    width: 178px;
+                                    height: 53px;
+                                    padding: 7px;
+                                    margin: 0 auto;
+                                    margin-top: 12px;
+                                    @media all and (max-width: 768px) {
+                                        & {
+                                            width: 130px;
+                                            height: 43px;
+                                        }
+                                    }
+                                    .border-top {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 20px;
+                                        border: solid 1px #cbcbcb;
+                                        border-bottom: none;
+                                    }
+                                    .border-bottom {
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 20px;
+                                        border: solid 1px #cbcbcb;
+                                        border-top: none;
+                                    }
+                                    .inner-box {
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        overflow: hidden;
+                                        background-color: #edb400;
+                                        .btn {
+                                            z-index: 2;
+                                            position: relative;
+                                            color: #333;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            text-align: center;
+                                            padding: 9px 0;
+                                            @media all and (max-width: 768px) {
+                                                & {
+                                                    font-size: 14px;
+                                                    padding: 6px 0;
+                                                }
+                                            }
+                                        }
+                                        .block1 {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 6px;
+                                            height: 4px;
+                                            background-color: #fff;
+                                        }
+                                        .block2 {
+                                            position: absolute;
+                                            bottom: 0;
+                                            right: 0;
+                                            width: 0;
+                                            height: 0;
+                                            border-style: solid;
+                                            border-width: 0 0 7px 7px;
+                                            border-color: transparent transparent #ffffff transparent;
+                                        }
+                                        .hover-mask {
+                                            width: 0%;
+                                            height: 100%;
+                                            background-color: #ffd654;
+                                            position: absolute;
+                                            top: 0;
+                                            left: auto;
+                                            right: -10%;
+                                            transition: all 0.5s ease;
+                                            transform: skew(-15deg, 0deg);
+                                        }
+                                    }
+                                    &:hover {
+                                        .inner-box {
+                                            .hover-mask {
+                                                width: 120%;
+                                                left: -10%;
+                                                right: auto;
+                                            }
+                                        }
+                                    }
+                                }
+                                .forgot {
+                                    a {
+                                        font-size: 15px;
+                                        color: #535353;
+                                        &:hover {
+                                            opacity: 0.9;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section.section2 {
+        margin-top: -70px;
+        @media all and (max-width: 1200px) {
+            & {
+                margin-top: 0;
+            }
+        }
+    }
+}

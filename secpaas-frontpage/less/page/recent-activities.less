@@ -1,0 +1,169 @@
+.wk-content {
+    margin-top: 87px;
+    background-color: #fef8f3;
+    @media all and (max-width: 480px) {
+        & {
+            margin-top: 70px;
+        }
+    }
+    .kv-box {
+        position: relative;
+        .kv {
+            width: 100%;
+            height: 354px;
+            background-position: center;
+            background-size: cover;
+            background-image: url('../images/platform-intro/kv.jpg');
+            @media all and (max-width: 650px) {
+                & { 
+                    height: 200px;
+                }
+            }
+            .text-box {
+                position: absolute;
+                top: 30%;
+                left: 16%;
+                font-family: 'Raleway', sans-serif;
+                >span {
+                    display: block;
+                    font-size: 48px;
+                    color: #fff;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    animation: kvText 5s linear infinite;
+                    @media all and (max-width: 650px) {
+                        & { 
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section2 {
+        width: 100%;
+        padding: 70px 0;
+        margin: 0 auto;
+        display: flex;
+        @media all and (max-width: 650px) {
+            & { 
+                padding: 50px 0;
+            }
+        }
+        .title {
+            display: inline-block;
+            margin: 0 auto;
+            font-size: 35px;
+            font-weight: bold;
+            padding-top: 10px;
+            border-top: solid 1px #000;
+            @media all and (max-width: 650px) {
+                & { 
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .section3 {
+        padding-bottom: 100px;
+        ul {
+            overflow: hidden;
+            li {
+                float: left;
+                position: relative;
+                padding: 0 15px;
+                width: 23%;
+                margin: 50px 1%;
+                max-width: 424px;
+                @media all and (max-width: 1280px) {
+                    & {
+                        width: 31%;
+                    }
+                }
+                @media all and (max-width: 900px) {
+                    & {
+                        width: 48%;
+                    }
+                }
+                @media all and (max-width: 650px) {
+                    & {
+                        float: none;
+                        width: 80%;
+                        margin: 0 auto 50px auto;
+                    }
+                }
+                @media all and (max-width: 400px) {
+                    & {
+                        width: 90%;
+                    }
+                }
+                @media all and (max-width: 360px) {
+                    & {
+                        width: 100%;
+                    }
+                }
+                .img-box {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .content-box {
+                    padding: 50px 30px 100px 30px;
+                    background-color: #fff;
+                    @media all and (max-width: 650px) {
+                        & {
+                            padding: 30px 20px 50px 20px;
+                        }
+                    }
+                    .title {
+                        color: #535353;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        @media all and (max-width: 650px) {
+                            & {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .details {
+                        font-size: 16px;
+                        color: #535353;
+                        line-height: 2;
+                        @media all and (max-width: 650px) {
+                            & {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    
+                }
+                .tag {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 185px;
+                    height: 50px;
+                    @media all and (max-width: 400px) {
+                        & {
+                            width: 120px;
+                            height: 33px;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: bottom;
+                        }
+                    }
+                }
+                .tag1 {
+                    background-image: url('../images/index/slider/tag1.png');
+                }
+                .tag2 {
+                    background-image: url('../images/index/slider/tag2.png');
+                }
+                .tag3 {
+                    background-image: url('../images/index/slider/tag3.png');
+                }
+            }
+        }
+    }
+}

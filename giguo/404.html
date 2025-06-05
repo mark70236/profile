@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width , minimum-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+	<title>聚 北海道鍋物</title>
+	<meta name="description" content="聚 北海道鍋物，情人相聚，好甜蜜，朋友相聚，繫友誼，家人相聚，嚐溫馨，聚精選新鮮豐富食材與絕妙">
+  	<meta name="keywords" content="聚，北海道鍋物，聚北海道鍋物，聚火鍋，聚菜單，聚火鍋外帶，聚牛奶鍋，聚札幌起司牛奶鍋，聚牛奶熊，聚寶熊，聚肉肉瀑布，聚海陸瀑布，聚1KG肉肉，聚海鮮，聚自助吧，聚吃到飽，聚生日五折，聚火鍋生日，聚餐廳地址，聚分店，聚LINE好友，花旗您生日我請客，王品集團">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ezz-file.com/files/wangpin-giguo/frontend/demo/index.html">
+	<meta property="og:title" content="聚 北海道鍋物">
+	<meta property="og:description" content="聚 北海道鍋物，情人相聚，好甜蜜，朋友相聚，繫友誼，家人相聚，嚐溫馨，聚精選新鮮豐富食材與絕妙">
+	<meta property="og:image" content="https://ezz-file.com/files/wangpin-giguo/frontend/demo/images/og-img.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />	
+	<link rel="stylesheet" href="plugin/reset/min.css">
+	<link rel="stylesheet" href="plugin/aos/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/404.css">
+	<script src="plugin/jquery/3.6.0.min.js"></script>
+	<script src="plugin/jqueryui/1.12.1.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="plugin/aos/aos.js"></script>
+	<script src="plugin/luxy/luxy.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/page.js"></script>
+	<script>
+		$(function() {
+			$("#header-box").load("header.html"); 
+			$("footer").load("footer.html"); 
+		})
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2468077-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-2468077-1');
+	</script>
+</head>
+	<body class="404">
+		<div id="header-box"></div>
+		<div class="header-menu-for-mobile">
+			<div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<ul class="header-menu">
+				<li class="header-anchor-btn-1" data-anchor="1"><a href="./activity-list.html"><span>好康活動</span></a></li>
+				<li class="header-anchor-btn-2" data-anchor="2"><a href="./menu-list.html"><span>好聚菜單</span></a></li>
+				<li class="header-anchor-btn-1" data-anchor="1"><a href="./store-list.html"><span>分店資訊</span></a></li>
+				<li class="header-anchor-btn-2" data-anchor="2"><a href="./join-member.html"><span>加入會員</span></a></li>
+				<li class="header-anchor-btn-1" data-anchor="1"><a href="./award.html"><span>填問券抽好禮</span></a></li>
+				<li class="header-anchor-btn-2" data-anchor="2"><a href="./about.html"><span>關於聚</span></a></li>
+			</ul>
+			<div class="logo-box">
+				<img src="images/logo-mobile-menu.svg">
+			</div>
+		</div>
+
+		<div class="luxy-box" id="luxy">
+			<section class="section section1">
+				<div class="flower1" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="150"><div class="aos-box"><div class="content"></div></div></div>
+				<div class="bg-line1"></div>
+				<div class="main-box">
+					<div class="content-box">
+						<div class="bear"><img src="images/page/bear.png"></div>
+						<div class="title">您點選的網頁已經調整囉~歡迎逛逛我們新網頁</div>
+						<div class="text">The website has encountered an error and cannot display the requested page.<br>Please try again later.Sorry for the inconvenience.</div>
+						<div class="btn-box">
+							<div class="btn btn-back"><a href="./index.html" target="_blank">返回上頁<div class="line"></div></a></div>
+							<div class="btn btn-to-index"><a href="./index.html">前往首頁<div class="line"></div></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-line2"></div>
+				<div class="flower2" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="150"><div class="aos-box"><div class="content"></div></div></div>
+			</section>
+			<section class="section footer-section">
+				<footer></footer>
+			</section>
+		</div>
+		<div class="to-top"><img src="images/gototop.png" alt="返回頁首"></div>
+
+	</body>
+</html>
