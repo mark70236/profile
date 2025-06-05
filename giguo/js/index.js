@@ -127,9 +127,9 @@ $(function() {
     // }
 
     // lightbox顯示/隱藏
-    $(".lightbox").fadeIn(500);
-    $(".lightbox .btn-close,.lightbox .bg").click(function(){
-        $(".lightbox").fadeOut(500);
-    })
+    // $(".lightbox").fadeIn(500);
+    // $(".lightbox .btn-close,.lightbox .bg").click(function(){
+    //     $(".lightbox").fadeOut(500);
+    // })
 
 })
