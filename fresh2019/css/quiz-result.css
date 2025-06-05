@@ -277,7 +277,7 @@ header > .bg-box {
   height: 12px;
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
-  background-image: url("../img/_mode/header/header-bg.png");
+  background-image: url("../img/mode/header/header-bg.png");
 }
 header .logo-box {
   float: left;
@@ -463,7 +463,7 @@ header .mobile-menu-out-box .header {
   width: 100%;
   height: 12px;
   background-repeat: repeat;
-  background-image: url("../img/_mode/header/header-bg.png");
+  background-image: url("../img/mode/header/header-bg.png");
 }
 header .mobile-menu-out-box .bg-box {
   width: 100%;
@@ -492,7 +492,7 @@ header .mobile-menu-out-box .bg-box .bottom-bg {
   bottom: 0;
   background-repeat: repeat;
   background-size: contain;
-  background-image: url("../img/_mode/header/mobile-menu-bg.png");
+  background-image: url("../img/mode/header/mobile-menu-bg.png");
 }
 header .mobile-menu-out-box .bg-box ul.link-menu {
   overflow: hidden;
@@ -685,7 +685,7 @@ body.quiz footer {
   height: 132px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("../img/_mode/hintman/gotop.png");
+  background-image: url("../img/mode/hintman/gotop.png");
 }
 @media all and (max-width: 1200px) {
   .gotop-outbox .gotop-box .gotop-circle {
@@ -706,7 +706,7 @@ body.quiz footer {
   position: absolute;
   top: 0px;
   right: 43px;
-  background-image: url("../img/_mode/hintman/hintman-arrow.png");
+  background-image: url("../img/mode/hintman/hintman-arrow.png");
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
