@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1860px" height="257px" viewBox="0 0 1860 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Path 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F5DFBA" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#D6B98A" offset="18.3092272%"></stop>
+            <stop stop-color="#EBDCC5" stop-opacity="0.153627622" offset="40.7226562%"></stop>
+            <stop stop-color="#FFFFFF" offset="64.0413851%"></stop>
+            <stop stop-color="#D6B98A" offset="75.5093961%"></stop>
+            <stop stop-color="#F3D6A8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.304501488">
+        <g id="menu-1" transform="translate(-60.000000, -619.000000)" stroke="url(#linearGradient-1)" stroke-width="2">
+            <path d="M59,676.552007 C243.9789,595.493155 519.881769,651.575585 712.830936,709.149264 C1002.11964,795.469486 1095.25665,825.272268 1266.90481,850.803762 C1529.80149,889.907849 1588.63987,831.53991 1573.20224,789.639613 C1553.07989,735.024231 1424.5534,769.892514 1202.26233,843.862377 C979.971265,917.832239 904.893169,812.968503 974.956196,789.639613 C1018.01688,775.301697 1107.0587,805.533419 1241.9533,832.12345 C1326.54256,848.797439 1426.9421,863.511503 1552.24274,866.546737 C1877.36047,874.422262 2206.71026,784.216201 2317.52014,692.189918" id="Path-9" transform="translate(1188.260072, 752.940622) rotate(1.000000) translate(-1188.260072, -752.940622) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F3D6A8" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#D6B98A" offset="24.4906039%"></stop>
+            <stop stop-color="#FFFFFF" offset="35.9586149%"></stop>
+            <stop stop-color="#EBDCC5" stop-opacity="0.153627622" offset="59.2773438%"></stop>
+            <stop stop-color="#D6B98A" offset="81.6907728%"></stop>
+            <stop stop-color="#F5DFBA" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" stroke="url(#linearGradient-1)" stroke-width="2.5">
+            <circle id="Oval" transform="translate(85.000000, 85.000000) scale(1, -1) rotate(-270.000000) translate(-85.000000, -85.000000) " cx="85" cy="85" r="80"></circle>
+        </g>
+    </g>
+</svg>
